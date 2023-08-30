@@ -1,0 +1,22 @@
+# Housekeeping Fields #
+
+X.ref
+
+# GRTS Fields #
+
+state
+prj_seq
+prj_title
+total_319_funds
+description
+will_has_load_reductions_ind
+project_type
+huc_8
+huc_12
+pollutants
+statewide_ind
+project_start_date
+project_link
+status
+ws_protect_ind
+watershed_plans

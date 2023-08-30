@@ -1,0 +1,35 @@
+BaseURL <- "https://ofmpub.epa.gov/apex/grts_rest/GetProjectsByHUC12/"
+myHUC12 <- "020503030802"
+
+myHUC12Vector <- c("020503030802", "020503030803")
+
+print (myHUC12Vector)
+length (myHUC12Vector)
+
+q()
+
+library(httr)
+URL <- paste0(BaseURL, myHUC12)
+
+raw_data <- GET (URL)
+
+print (raw_data)
+library ("jsonlite")
+GRTS <- fromJSON(rawToChar(raw_data$content), flatten = TRUE)
+
+myHUC12 <- "020503030803"
+URL <- paste0(BaseURL, myHUC12)
+raw_data <- GET (URL)
+print(raw_data)
+
+temp <- fromJSON(rawToChar(raw_data$content), flatten = TRUE)
+append (GRTS, temp)
+str (GRTS)
+View(GRTS)
+q()
+
+
+foo <-jsonlite::fromJSON("https://ofmpub.epa.gov/apex/grts_rest/GetProjectsByHUC12/020503030802")
+
+print (foo)
+

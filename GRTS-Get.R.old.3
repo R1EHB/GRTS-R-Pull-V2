@@ -1,0 +1,129 @@
+# GRTS JSON Test #
+
+
+## Set BaseURL ##
+BaseURL <- "https://ofmpub.epa.gov/apex/grts_rest/GetProjectsByHUC12/"
+
+## Set a little test set of HUC12 ##
+myHUC12Vector <- c("020503030802", "020503030803","171100190303")
+
+## Load Libraries ##
+library(httr)
+library(jsonlite)
+library(data.table)
+
+
+## Create a data-less list template for the list data returned by fromJSON and GRTS ##
+
+
+
+### Coarse GRTS Data Structure ###
+### Right from URL; not converted ###
+
+
+# X
+# x
+# X.ref (chr) {(URL API)etc}
+# items.state (chr)
+# items.prj_seq (int)
+# items.prj_title (chr)
+# items.total_319_funds (chr) {Need to convert to int or float}
+# items.description (chr)
+# items.will_has_load_reductions_ind (chr) {need to convert to boolean}
+# items.project_type (chr)
+# items.huc_8 (chr)
+# items.huc_12 (chr)
+# items.pollutants (chr)
+# items.statewide_ind (chr) {need to convert to boolean}
+# items.project_start_date (chr) {need to convert to date}
+# items.project_link (chr)
+# items.status (chr)
+# items.ws_protect_ind (chr)
+# items.watershed_plans (chr) 
+
+
+coarseGRTS <- data.frame (
+	   X.ref			= character(),
+	   items.state			= character(),
+	   items.prj_seq		= integer(),		##	Project sequence number
+	   items.prj_title 	  	= character(),		## 	Project title
+	   items.total_319_funds	= character(),
+	   items.description		= character(),		##	Project description
+	   items.will_has_load_reductions_ind = character(), 		##      Project has load reductions??
+	   items.project_type		= character(),
+	   items.huc_8			= character(),
+	   items.huc_12 		= character(),
+	   items.pollutants		= character(),
+	   items.statewide_ind 		= character(),
+	   items.project_start_date	= character(),
+	   items.project_link 		= character(),
+	   items.status 		= character(),
+	   items.ws_protect_ind 	= character(),
+	   items.watershed_plans 	= character(),
+	    stringsAsFactors=FALSE )
+
+
+## Loop through all the HUC12 in the vector for pulling
+
+for (i in 1:length(myHUC12Vector)) {
+
+    URL <- paste0(BaseURL, myHUC12Vector[i])
+    raw_data <- GET (URL)
+    if (i==1) {
+        temp <- fromJSON(rawToChar(raw_data$content), flatten = TRUE)
+    }
+    else temp <- append (temp, temp)
+}
+
+#str (temp)
+# str (coarseGRTS)
+
+# Make coarseGRTS into a list, rbind with temp, turn back to a data frame
+
+coarseGRTS_List <- as.list (coarseGRTS)
+#str (coarseGRTS_List)
+
+l <- list(temp, coarseGRTS_List)
+rbindlist(l, use.names=TRUE, fill=TRUE)
+
+str (l)
+
+q()
+
+# Let's take a closer look at the structure of 
+
+
+
+
+
+
+print (myHUC12Vector)
+length (myHUC12Vector)
+
+q()
+
+library(httr)
+URL <- paste0(BaseURL, myHUC12)
+
+raw_data <- GET (URL)
+
+print (raw_data)
+library ("jsonlite")
+GRTS <- fromJSON(rawToChar(raw_data$content), flatten = TRUE)
+
+myHUC12 <- "020503030803"
+URL <- paste0(BaseURL, myHUC12)
+raw_data <- GET (URL)
+print(raw_data)
+
+temp <- fromJSON(rawToChar(raw_data$content), flatten = TRUE)
+append (GRTS, temp)
+str (GRTS)
+View(GRTS)
+q()
+
+
+foo <-jsonlite::fromJSON("https://ofmpub.epa.gov/apex/grts_rest/GetProjectsByHUC12/020503030802")
+
+print (foo)
+
