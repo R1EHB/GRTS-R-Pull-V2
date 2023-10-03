@@ -2,8 +2,7 @@
 
 
 ## Set BaseURL ##
-BaseURL <- "https://ofmpub.epa.gov/apex/grts_rest/GetProjectsByHUC12/"
-
+BaseURL <- "https://ordspub.epa.gov/ords/grts_rest/grts_rest_apex/grts_rest_apex/GetProjectsByHUC12/"
 ## Set a little test set of HUC12 ##
 
  myHUC12Vector <- c("020503030802", "020503030803","171100190303")
