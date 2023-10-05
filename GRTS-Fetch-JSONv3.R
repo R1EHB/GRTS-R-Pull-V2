@@ -12,7 +12,10 @@ library(tidyr)
 
 # Set the URL to fetch, either in whole or in part #
 
-BaseURL <- "https://ordspub.epa.gov/ords/grts_rest/grts_rest_apex/grts_rest_apex/GetProjectsByHUC12/171100190303"
+# 010600030902  Oyster River
+# 171100190303 Chambers Creek, WA
+
+BaseURL <- "https://ordspub.epa.gov/ords/grts_rest/grts_rest_apex/grts_rest_apex/GetProjectsByHUC12/010600030902"
 
 # Fetch the data using curl/https #
 DataRequestRaw <- curl_fetch_memory (BaseURL)
@@ -63,9 +66,16 @@ rm (document.id, hasMore, limit, offset, count)
 GRTSInfo4HUC$..JSON  -> HUCsDetails
 
  str (HUCsDetails)
-# print (HUCsDetails)
+ print (HUCsDetails)
+
+
 
 ProjsInHUC.OuterList <- HUCsDetails[[1]] # One or more projects per HUC (in this URL fetch)
+
+str (ProjsInHUC.OuterList ) # This is a nested list of all the projects in the huc.  Need to loop over each
+
+
+q()
 
 ## Gather up the Project-level metadata ##
 
