@@ -108,6 +108,7 @@ temp_frame <- as.data.frame(temp_df)
 ProjDetailFrame  <- bind_cols (temp_frame, ProjMetaData, ProjLinks)
 str (ProjDetailFrame)
 
+write.csv(ProjDetailFrame, file="test.csv")
 
 q()
 
