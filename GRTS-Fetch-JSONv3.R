@@ -9,6 +9,8 @@ library(dplyr)
 library(curl)
 library(tidyjson)
 library(tidyr)
+# library(stringr)
+
 
 # Set the URL to fetch, either in whole or in part #
 
@@ -75,7 +77,6 @@ ProjsInHUC.OuterList <- HUCsDetails[[1]] # One or more projects per HUC (in this
 str (ProjsInHUC.OuterList ) # This is a nested list of all the projects in the huc.  Need to loop over each
 
 
-q()
 
 ## Gather up the Project-level metadata ##
 
@@ -87,7 +88,7 @@ count  <- ProjsInHUC.OuterList$count
 ProjMetaData <- data.frame (hasMore,limit,offset,count)
 ProjLinks <- (ProjsInHUC.OuterList$links)
 
-str (ProjLinks)
+# str (ProjLinks)
 
 ## Clear these for reuse ##
 
@@ -96,17 +97,55 @@ rm (hasMore, limit, offset, count)
 # str(ProjsInHUC.OuterList)
 # print (ProjsInHUC.OuterList)
 
-ProjDetailList <-ProjsInHUC.OuterList[[1]][[1]]
+# It seems ProjMetaData and HUCMetaData elements should and do match, but watch for this later
+print (ProjMetaData)
+print (HUCMetaData)
 
+# Loop over the elements of ProjsInHUC (i), from one to j
+# j is count of projects from HUCMetaData or ProjMetaData
+
+i=1
+j <- HUCMetaData$count
+
+
+# Create Data Frame with first row of data
+
+# Note to self: delete somewhere the href...X and rel...X columns
+
+ProjDetailList <-ProjsInHUC.OuterList[[1]][[i]]
 temp_df <- do.call(cbind, ProjDetailList)
-
-str (temp_df)
-
 temp_frame <- as.data.frame(temp_df)
-
-
 ProjDetailFrame  <- bind_cols (temp_frame, ProjMetaData, ProjLinks)
+
 str (ProjDetailFrame)
+  
+for (i in 2:j) {
+  print (i)
+  ProjDetailList <-ProjsInHUC.OuterList[[1]][[i]]
+  temp_df <- do.call(cbind, ProjDetailList)
+  temp_frame <- as.data.frame(temp_df)
+  temp_frame  <- bind_cols (temp_frame, ProjMetaData, ProjLinks)
+ ProjDetailFrame <- bind_rows(ProjDetailFrame,temp_frame)
+
+}
+
+str (ProjDetailFrame)
+
+# Keep only the variables we want
+
+# drop href variables
+VarNames <- colnames(ProjDetailFrame)
+href_drop <- grepl (pattern='href...',VarNames)
+ProjDetailFrame <- ProjDetailFrame[!href_drop]
+
+
+# drop rel variables
+
+VarNames <- colnames(ProjDetailFrame)
+rel_drop  <- grepl (pattern='rel...' ,VarNames)
+ProjDetailFrame <- ProjDetailFrame[!rel_drop]
+
+# Drop from data frame those columns with href or rel
 
 write.csv(ProjDetailFrame, file="test.csv")
 
