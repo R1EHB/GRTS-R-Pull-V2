@@ -38,15 +38,16 @@ str (myHUC12Vector)
 
 # Temporarily put vec_len as 10 for testing
 
-vec_len = 2
+vec_len = 1
 
 for (i in 1:vec_len) {
     URL <- paste0(BaseURL, myHUC12Vector$HUC12_Code[i])
-    HUCdataBlob <- URLfetch(URL)
-    MetaData <- HUCmetaData (HUCdataBlob)
+    URL_result <- URLfetch(URL)
+    URLmetaData (URL_result)     
+
 }
 
-str (MetaData)
+# str (MetaData)
 
 
 q()

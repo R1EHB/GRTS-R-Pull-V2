@@ -16,12 +16,38 @@
 
 URLfetch <- function (URL="https://grts.epa.gov") {
     DataRequestRaw <- curl_fetch_memory(URL)
-    HUCdataBlob <- rawToChar(DataRequestRaw)
-    return (HUCdataBlob)
+    return (DataRequestRaw)
 }
 
 
 ####
+
+### URLmetaData
+## Function takes in the URLdata (mixed metadata and payload) retrieved from the API and
+### Returns the metadata from http retrieval (curl)
+
+URLmetaData <- function (DataRequestRaw) {
+
+    urlused <- DataRequestRaw$url
+    status_code <- DataRequestRaw$status_code
+    type <- DataRequestRaw$type
+    headers <- DataRequestRaw$headers
+    modified <- DataRequestRaw$modified
+    times <- DataRequestRaw$times
+
+    # content is in raw format and has nested data
+    # content will be extracted by other functions
+
+    # metaData_URL <- data.frame (urlused, retrieval_status_code,retrieval_type,retrieval_headers, retrieval_modified,
+#	       		  retrieval_times)
+
+    # return(metaData_URL)
+}
+	
+
+
+
+
 
 
 ## Function takes in the HUCdata (mixed metadata and payload) retrieved from the API and
@@ -36,9 +62,10 @@ HUCmetaData <- function (HUCdataBlob) {
     offset <- HUCdataBlob$offset # Not sure what offset is
     count <- HUCdataBlob$count  # How many projects are in this HUC
 
-    MetaData <- data.frame (document.id,hasMore,limit,offset,count) 
-
-    return (MetaData)
+    str(document.id)
+    # MetaData <- data.frame (document.id,hasMore,limit,offset,count) 
+    # str(MetaData)
+    # return (MetaData)
 }
 
 ####
@@ -48,8 +75,10 @@ HUCmetaData <- function (HUCdataBlob) {
 ### returns the payload portion.
 
 HUCpayloadData <- function (HUCdataBlob) {
-    ContentBlob <- (HUCdataBlob$content)
-    HUCsDetails <- ContentBlob$..JSON
+    ContentBlob <- rawToChar(HUCdataBlob$content)
+    ContentBlob %>% spread_all -> HUCsDetails
+
+#HUCsDetails <- ContentBlob$..JSON
 
     # This is a nested list of all the projects in the HUC.
     ## Need to loop over each
