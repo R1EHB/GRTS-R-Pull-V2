@@ -52,7 +52,7 @@ HUC_Content <-tempHUC_Content
 
 for (i in 2:vec_len) {
     URL <- paste0(BaseURL, myHUC12Vector$HUC12_Code[i])
-    tempHUC_Content[i] <-   HUCDataContent (URL)
+    tempHUC_Content <-   HUCDataContent (URL)
     bind_rows (HUC_Content, tempHUC_Content)
 }
 
