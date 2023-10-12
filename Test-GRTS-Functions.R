@@ -47,7 +47,8 @@ vec_len = 10
 # Setup first element
 URL <- paste0(BaseURL, myHUC12Vector$HUC12_Code[1])
 
-HUC_Content <- HUCDataContent(URL)
+tempHUC_Content <- HUCDataContent(URL)
+HUC_Content <-tempHUC_Content
 
 for (i in 2:vec_len) {
     URL <- paste0(BaseURL, myHUC12Vector$HUC12_Code[i])
