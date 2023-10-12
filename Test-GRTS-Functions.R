@@ -10,7 +10,7 @@ library(dplyr)
 library(curl)
 library(tidyjson)
 library(tidyr)
-
+library(magrittr)  # add to main
 
 
 # Test the URL Fetch and spread #
@@ -22,10 +22,6 @@ BaseURL <-
 
 
 # Get the new england HUC12 list
-
-# need to simplify flow logic with using a subroutine/function(s)
-
-# move to function?
 
 myHUC12Vector <-
   read.csv(
@@ -42,23 +38,15 @@ str (myHUC12Vector)
 
 # Temporarily put vec_len as 10 for testing
 
-vec_len = 10
+vec_len = 2
 
-# Setup first element
-URL <- paste0(BaseURL, myHUC12Vector$HUC12_Code[1])
-
-tempHUC_Content <- HUCDataContent(URL)
-HUC_Content <- tempHUC_Content
-
-str (tempHUC_Content)
-
-for (i in 2:vec_len) {
+for (i in 1:vec_len) {
     URL <- paste0(BaseURL, myHUC12Vector$HUC12_Code[i])
-    tempHUC_Content <-   HUCDataContent (URL)
-    bind_rows (HUC_Content, tempHUC_Content)
-    str (tempHUC_Content)
+    HUCdataBlob <- URLfetch(URL)
+    MetaData <- HUCmetaData (HUCdataBlob)
 }
 
-str (HUC_Content)
+str (MetaData)
+
 
 q()
