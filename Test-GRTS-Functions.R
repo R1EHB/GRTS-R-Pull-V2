@@ -38,7 +38,7 @@ str (myHUC12Vector)
 
 # Temporarily put vec_len as 10 for testing
 
- vec_len = 14
+ vec_len = 140
 
 t <- data.frame (urlused=character(), status_code=integer(), modified=character(), stringsAsFactors=FALSE)
 
