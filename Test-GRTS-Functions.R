@@ -34,11 +34,11 @@ myHUC12Vector <-
 head (myHUC12Vector)
 str (myHUC12Vector)
 
-# vec_len <- length (myHUC12Vector)
+ vec_len <- length (myHUC12Vector)
 
 # Temporarily put vec_len as 10 for testing
 
- vec_len = 140
+# vec_len = 140
 
 t <- data.frame (urlused=character(), status_code=integer(), modified=character(), stringsAsFactors=FALSE)
 
