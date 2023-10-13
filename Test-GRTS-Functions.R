@@ -38,16 +38,34 @@ str (myHUC12Vector)
 
 # Temporarily put vec_len as 10 for testing
 
-vec_len = 1
+vec_len = 300
+
+t <- data.frame (urlused=character(), status_code=integer(), modified=character(), stringsAsFactors=FALSE)
 
 for (i in 1:vec_len) {
+
+    # URL Metadata
     URL <- paste0(BaseURL, myHUC12Vector$HUC12_Code[i])
     URL_result <- URLfetch(URL)
-    URLmetaData (URL_result)     
+    j <- URLmetaData (URL_result)
+    t <- rbind (t,j)
+
+    # will move extraction of HUC metadata to a subfunction of HUCpayloadData
+    # HUC Metadata
+    # HUCmetaData(URL_result)
+
+    if (i==1) {
+       Projects.DF <- HUCpayloadData(URL_result)
+    }
+
+    if (i > 1) {
+       temp.df <- HUCpayloadData(URL_result)
+       Projects.DF <- bind_rows (Projects.DF, temp.df)
+    }
 
 }
 
-# str (MetaData)
+str (Projects.DF)
 
-
+write.csv (Projects.DF, file="test.csv")
 q()
