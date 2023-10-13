@@ -23,7 +23,7 @@ BaseURL <-
 
 # Get the new england HUC12 list
 
-myHUC12Vector <-
+myHUC12DF <-
   read.csv(
     file = 'HUC12NewEnglandvector.csv' ,
     header = T,
@@ -31,14 +31,18 @@ myHUC12Vector <-
   )
 
 
-head (myHUC12Vector)
-str (myHUC12Vector)
+# head (myHUC12DF)
+# str (myHUC12DF)
 
- vec_len <- length (myHUC12Vector)
+ vec_len <- nrow (myHUC12DF)
 
 # Temporarily put vec_len as 10 for testing
 
 # vec_len = 140
+
+# print (vec_len)
+
+
 
 t <- data.frame (urlused=character(), status_code=integer(), modified=character(), stringsAsFactors=FALSE)
 
@@ -50,7 +54,7 @@ pb <-  txtProgressBar(min = 0, max = vec_len, initial = 0, style = 3,
 for (i in 1:vec_len) {
 
     # URL Metadata
-    URL <- paste0(BaseURL, myHUC12Vector$HUC12_Code[i])
+    URL <- paste0(BaseURL, myHUC12DF$HUC12_Code[i])
     URL_result <- URLfetch(URL)
     j <- URLmetaData (URL_result)
     t <- rbind (t,j)
