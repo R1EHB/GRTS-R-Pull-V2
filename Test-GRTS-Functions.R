@@ -38,10 +38,15 @@ str (myHUC12Vector)
 
 # Temporarily put vec_len as 10 for testing
 
-vec_len = 14
+ vec_len = 14
 
 t <- data.frame (urlused=character(), status_code=integer(), modified=character(), stringsAsFactors=FALSE)
 
+# Create a progress bar for the loop
+
+pb <-  txtProgressBar(min = 0, max = vec_len, initial = 0, style = 3,
+   width = 50, char = "=")
+		     
 for (i in 1:vec_len) {
 
     # URL Metadata
@@ -63,9 +68,11 @@ for (i in 1:vec_len) {
        Projects.DF <- bind_rows (Projects.DF, temp.df)
     }
 
+    setTxtProgressBar(pb, i)
+
 }
 
-str (Projects.DF)
+close (pb)
 
 write.csv (Projects.DF, file="test.csv")
 saveRDS (Projects.DF, file="Projects.rds")
