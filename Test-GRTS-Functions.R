@@ -38,7 +38,7 @@ str (myHUC12Vector)
 
 # Temporarily put vec_len as 10 for testing
 
-vec_len = 300
+vec_len = 14
 
 t <- data.frame (urlused=character(), status_code=integer(), modified=character(), stringsAsFactors=FALSE)
 
@@ -68,4 +68,5 @@ for (i in 1:vec_len) {
 str (Projects.DF)
 
 write.csv (Projects.DF, file="test.csv")
+saveRDS (Projects.DF, file="Projects.rds")
 q()
