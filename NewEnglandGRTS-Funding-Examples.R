@@ -35,10 +35,19 @@ mci_funds <- mean_ci(Projects.DF$total_319_funds)
 mci_years <- mean_ci(Projects.DF$approp_year)
 print (mci_funds)
 print (mci_years)
-boxplot (Projects.DF$total_319_funds)
-boxplot (Projects.DF$approp_year)
 
+png ("funds_319.png")
+boxplot (Projects.DF$total_319_funds)
+dev.off()
+
+png ("AppropYear.png")
+boxplot (Projects.DF$approp_year)
+dev.off()
+
+png("fundsByAppropYear.png")
 boxplot (total_319_funds ~ approp_year, Projects.DF)
+dev.off()
+
 q()
 
 
