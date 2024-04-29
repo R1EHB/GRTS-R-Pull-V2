@@ -62,32 +62,51 @@ for huc in huc12_urls:
 
 count = 0 
 
-j_outfile.write('{ "data": \n [')
+j_outfile.write('{ "data": \r\n [')
 
 for entries in data_by_huc:
     for subentries in entries['items']:
 
         h_outfile.write(json.dumps(subentries))
         j_outfile.write(json.dumps(subentries))
-        h_outfile.write('\n')        
+        h_outfile.write('\r\n')        
         j_outfile.write(',')
+        e_dict = subentries.keys()
+        dict_val = subentries.values()
+        
         if count == 0: # write the data headers
-            e_dict = subentries.keys()
-            
+                    
             for ii in e_dict:
                 csv_outfile.write (ii)
-                csv_outfile.write (',')
-                
-            csv_outfile.write ('\n')
-            # csv_outfile.write(header....)
-            #csv_outfile.write(data...)
+                csv_outfile.write (';')
+
+            csv_outfile.write ('Counter')
+            csv_outfile.write ('\r\n')
+        
+            
+            for jj in dict_val:
+                jk = str (jj)
+            
+                csv_outfile.write(jk)
+                csv_outfile.write(';')
+            csv_outfile.write (str(count))    
+            csv_outfile.write ('\r\n')
             count = count +1
+            
         else:
-            # csv_outfile.write(data...)
+            for lj in dict_val:
+                lk = str (lj)
+            
+                csv_outfile.write(lk)
+                csv_outfile.write(';')
+                
+            csv_outfile.write (str(count))    
+            csv_outfile.write ('\r\n')
+
             count = count+1
 
             
-j_outfile.write('] \n }')
+j_outfile.write('] \r\n }')
 
 h_outfile.close
 j_outfile.close
