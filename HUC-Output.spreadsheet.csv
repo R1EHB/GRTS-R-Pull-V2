@@ -1,210 +1,1953 @@
-state;st_prj_no;prj_seq;prj_title;approp_year;total_319_funds;project_dollars;program_dollars;epa_other;other_federal;state_funds;state_in_kind;local_funds;other_funds;local_in_kind;total_budget;description;will_has_load_reductions_ind;huc_8;huc_12;pollutants;n_lbsyr;p_lbsyr;sed_tonsyr;statewide_ind;project_start_date;status;project_link;ws_protect_ind;watershed_plans;grant_no;Counter
-RI;04-Water(NPS)-05;23756;Middletown: Slate Hill Farm Stormwater Retrofit;2004;$14,402;$0;$0;$0;$0;$0;$0;$40,000;$0;$0;$54,402;None;Y;01090004;010900040911;Sedimentation-Siltation,Phosphorus,Nitrogen;None;None;None;N;08/01/2006;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;None;None;99125702;0
-RI;04-Water(NPS)-05;62413;Middletown: Slate Hill Farm Stormwater Retrofit;2006;$22,581;$0;$0;$0;$0;$0;$0;$0;$0;$0;$22,581;None;Y;01090004;010900040911;None;None;None;None;N;09/01/2009;None;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:62413" target="_blank">VIEW</a>;None;None;99125703;1
-RI;04-Water(NPS)-05;62412;Middletown: Slate Hill Farm Stormwater Retrofit;2005;$11,017;$0;$0;$0;$0;$0;$0;$0;$0;$0;$11,017;None;Y;01090004;010900040911;Sedimentation-Siltation,Phosphorus,Nitrogen;None;None;None;N;08/10/2006;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:62412" target="_blank">VIEW</a>;None;None;99125702;2
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040911;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;3
-RI;07-Water(NPS05)-07;26861;Middletown: Gaudet Middle School Stormwater Retrofit;2006;$24,065;$0;$0;$0;$0;$0;$0;$8,022;$0;$0;$32,087;None;Y;01090004;010900040911;Sedimentation-Siltation,Phosphorus,Nitrogen,Biochemical Oxygen Demand (BOD);None;None;None;N;09/30/2009;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:26861" target="_blank">VIEW</a>;None;None;99125703;4
-RI;None;110519;NWQI Activities;2018;$30,000;$30,000;$0;$0;$0;$0;$0;$0;$0;$0;$30,000;None;N;01090004;010900040911;None;None;None;None;N;10/01/2017;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:110519" target="_blank">VIEW</a>;N;None;99125707;5
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040911;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;6
-RI;09-Water(NPS)-05;62501;DOT: Stormwater Bioretention for Reconstruction of Two Mile Corner;2010;$364,978;$0;$0;$0;$0;$0;$0;$46,765;$0;$0;$411,743;None;Y;01090004;010900040911;Sedimentation-Siltation,Phosphorus,Nitrogen,Metals (Zinc);None;None;None;N;03/21/2014;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:62501" target="_blank">VIEW</a>;None;None;99125704;7
-RI;14-Water(NPS)-03;107380;Newport: Hillside Avenue Public Right-of-Way Green Infrastructure Parking Demonstration Project;2015;$104,825;$0;$0;$0;$0;$0;$0;$279,863;$0;$0;$384,688;None;Y;01090004;010900040911;Stormwater Volume;None;None;None;N;02/17/2014;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:107380" target="_blank">VIEW</a>;None;None;99125706;8
-RI;14-Water(NPS)-03;103280;Newport: Hillside Avenue Public Right-of-Way Green Infrastructure Parking Demonstration Project;2014;$175,038;$175,038;$0;$0;$0;$0;$0;$279,863;$0;$0;$454,901;None;Y;01090004;010900040911;Sedimentation-Siltation,Phosphorus,Nitrogen;18.7;2.8;0.5;N;02/17/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:103280" target="_blank">VIEW</a>;N;None;99125706;9
-RI;14-Water(NPS)-03;104893;Newport: Hillside Avenue Public Right-of-Way Green Infrastructure Parking Demonstration Project;2013;$76,000;$76,000;$0;$0;$0;$0;$0;$0;$0;$0;$76,000;None;Y;01090004;010900040911;Stormwater Volume;None;None;None;N;07/06/2016;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:104893" target="_blank">VIEW</a>;None;None;99125705;10
-RI;09-Water(NPS)-06;62502;Middletown: Feasibility Study for the Attenuation of Phosphorus in Stormwater in the North Easton Pond Watershed;2009;$27,900;$0;$0;$0;$0;$0;$0;$3,100;$0;$0;$31,000;None;N;01090004;010900040911;None;None;None;None;N;05/01/2012;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:62502" target="_blank">VIEW</a>;None;None;99125704;11
-RI;08-Water(NPS)-06;73964;Middletown Newport Avenue Bioretention Stormwater Retrofit;2006;$41,002;$0;$0;$0;$0;$0;$28,465;$0;$0;$0;$69,467;None;Y;01090004;010900040911;Sedimentation-Siltation,Phosphorus,Nitrogen,Biochemical Oxygen Demand (BOD);None;None;None;N;12/22/2010;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:73964" target="_blank">VIEW</a>;None;None;99125703;12
-RI;None;103289;NWQI Activities;2016;$154,312;$154,312;$0;$0;$0;$0;$0;$0;$0;$0;$154,312;None;N;01090004;010900040911;None;None;None;None;N;01/09/2016;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:103289" target="_blank">VIEW</a>;N;None;99125706;13
-RI;2008-Water(B/G)-20;62405;Jamestown Salt Storage Structure;2004;$120,000;$0;$0;$0;$0;$0;$0;$80,000;$0;$0;$200,000;None;Y;01090004;010900040908;Sedimentation-Siltation;None;None;None;N;10/10/2008;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:62405" target="_blank">VIEW</a>;None;None;99125702;14
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040908;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;15
-RI;None;119350;Jamestown: Phragmites Demonstration Project in South Pond Drinking Water Reservoir;2021;$150,000;$150,000;$0;$0;$0;$0;$0;$100,000;$0;$0;$250,000;None;N;01090004;010900040908;None;None;None;None;N;05/02/2022;Not Initiated;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:119350" target="_blank">VIEW</a>;N;None;99125708;16
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040908;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;17
-RI;'99-Water(NPS)-11;23904;Wickford Harbor Restoration Project;2002;$59,384;$0;$0;$0;$0;$0;$0;$30,745;$0;$0;$90,129;None;N;01090004;010900040908;None;None;None;None;N;02/01/2000;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23904" target="_blank">VIEW</a>;None;None;99125701;18
-RI;02-Water(NPS)-05;7956;Middletown Salt Pile Enclosure;2002;$60,000;$0;$0;$0;$0;$0;$0;$40,000;$0;$0;$100,000;None;Y;01090004;010900040910;Sedimentation-Siltation,Road Salt or Deicer;None;None;None;N;01/28/2004;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:7956" target="_blank">VIEW</a>;None;None;99125701;19
-RI;04-Water(NPS)-03;84283;Middletown: Maidford River Bank Stabilization;2009;$50,000;$0;$0;$0;$0;$0;$0;$0;$0;$0;$50,000;None;Y;01090004;010900040910;None;None;None;None;N;09/30/2012;Discontinued;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:84283" target="_blank">VIEW</a>;None;None;99125704;20
-RI;None;103289;NWQI Activities;2016;$154,312;$154,312;$0;$0;$0;$0;$0;$0;$0;$0;$154,312;None;N;01090004;010900040910;None;None;None;None;N;01/09/2016;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:103289" target="_blank">VIEW</a>;N;None;99125706;21
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040910;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;22
-RI;None;110519;NWQI Activities;2018;$30,000;$30,000;$0;$0;$0;$0;$0;$0;$0;$0;$30,000;None;N;01090004;010900040910;None;None;None;None;N;10/01/2017;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:110519" target="_blank">VIEW</a>;N;None;99125707;23
-RI;None;74140;Demonstration of Wetland Restoration - "8-Rod Farm" Tiverton, RI;2010;$42,565;$0;$0;$0;$0;$0;$0;$0;$0;$0;$42,565;None;N;01090004;010900040910;None;None;None;None;N;09/01/2012;Not Initiated;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74140" target="_blank">VIEW</a>;None;None;99125704;24
-RI;None;103277;Aquidneck Island BMPS and Related NWQI Activities;2014;$100,015;$100,015;$0;$0;$0;$0;$0;$0;$0;$0;$100,015;None;Y;01090004;010900040910;Stormwater Volume;None;None;None;N;01/01/2017;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:103277" target="_blank">VIEW</a>;N;None;99125706;25
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040910;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;26
-RI;02-Water(NPS)-27;23786;DEM - Narrow River Stormwater Management - TMDL Implementation;2003;$31,700;$0;$0;$0;$0;$0;$0;$21,133;$0;$0;$52,833;None;N;01090004;010900040912;None;None;None;None;N;05/15/2005;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23786" target="_blank">VIEW</a>;None;None;99125700;27
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040912;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;28
-RI;07-Water(N05/B/G)-12;62365;Narrow River Stormwater Abatement at Pettaquamscutt and Edgewater ;2002;$163,236;$0;$0;$0;$0;$910,975;$0;$566,225;$0;$0;$1,640,436;None;Y;01090004;010900040912;Sedimentation-Siltation;None;None;None;N;04/23/2008;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:62365" target="_blank">VIEW</a>;None;None;99125701;29
-RI;07-Water(N05/B/G)-12;62367;Narrow River Stormwater Abatement at Pettaquamscutt and Edgewater ;2003;$106,721;$0;$0;$0;$0;$0;$0;$0;$0;$0;$106,721;None;Y;01090004;010900040912;Sedimentation-Siltation;None;None;None;N;04/23/2008;Behind Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:62367" target="_blank">VIEW</a>;None;None;99125701;30
-RI;02-Water(NPS)-27 ;27785;DEM Sust. Watersheds: Narrow River Stormwater Abatement Study;2005;$50,000;$0;$0;$0;$0;$0;$0;$0;$0;$0;$50,000;None;N;01090004;010900040912;None;None;None;None;N;03/01/2005;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:27785" target="_blank">VIEW</a>;None;None;99125702;31
-RI;None;119321;Narragansett: Narrow River: Indian Trail Neighborhood Stormwater BMP Installation;2022;$0;$0;$0;$0;$0;$0;$0;$0;$0;$0;$0;None;N;01090004;010900040912;None;None;None;None;N;09/01/2021;Never Initiated;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:119321" target="_blank">VIEW</a>;N;[ { "title":"Narrow River Watershed Plan", "link":"", "status":"Implementing Plan" }];99125708;32
-RI;02-Water(NPS)-27;23787;DEM - Narrow River Stormwater Management - TMDL Implementation;2004;$7,020;$0;$0;$0;$0;$0;$0;$0;$0;$0;$7,020;None;N;01090004;010900040912;None;None;None;None;N;05/15/2005;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23787" target="_blank">VIEW</a>;None;None;99125702;33
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040912;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;34
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040602;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;35
-RI;02-Water(NPS)-07;7955;Coventry Salt Storage Facility;2002;$60,000;$0;$0;$0;$0;$0;$0;$40,000;$0;$0;$100,000;None;Y;01090004;010900040602;Sedimentation-Siltation,Road Salt or Deicer;None;None;None;N;12/19/2003;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:7955" target="_blank">VIEW</a>;None;None;99125701;36
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040602;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;37
-RI;02-Water(NPS)-28;73967;East Shore Drive Stormwater Improvements;2008;$27,243;$0;$0;$0;$0;$0;$0;$26,000;$0;$0;$53,243;None;Y;01090004;010900040603;Sedimentation-Siltation,Phosphorus,Nitrogen,Biochemical Oxygen Demand (BOD);None;None;None;N;03/24/2009;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:73967" target="_blank">VIEW</a>;None;None;99125704;38
-RI;02-Water(NPS)-07;7955;Coventry Salt Storage Facility;2002;$60,000;$0;$0;$0;$0;$0;$0;$40,000;$0;$0;$100,000;None;Y;01090004;010900040603;Sedimentation-Siltation,Road Salt or Deicer;None;None;None;N;12/19/2003;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:7955" target="_blank">VIEW</a>;None;None;99125701;39
-RI;04-Water(NPS)-04;73966;West Warwick Former Landfill Closure Project;2009;$20,000;$0;$0;$0;$0;$0;$0;$26,667;$0;$0;$46,667;None;N;01090004;010900040603;None;None;None;None;N;03/19/2007;Behind Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:73966" target="_blank">VIEW</a>;None;None;99125704;40
-RI;02-Water(NPS)-23;73981;Coventry: Sandy Bottom Road Wetland Restoration;2008;$60,000;$0;$0;$0;$0;$0;$0;$40,000;$0;$0;$100,000;None;Y;01090004;010900040603;Phosphorus,Nitrogen;None;None;None;N;07/29/2004;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:73981" target="_blank">VIEW</a>;None;None;99125704;41
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040603;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;42
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040603;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;43
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040607;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;44
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040607;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;45
-RI;04-Water(NPS)-04;73966;West Warwick Former Landfill Closure Project;2009;$20,000;$0;$0;$0;$0;$0;$0;$26,667;$0;$0;$46,667;None;N;01090004;010900040607;None;None;None;None;N;03/19/2007;Behind Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:73966" target="_blank">VIEW</a>;None;None;99125704;46
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040608;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;47
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040608;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;48
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040909;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;49
-RI;2008-Water(B/G)-20;62405;Jamestown Salt Storage Structure;2004;$120,000;$0;$0;$0;$0;$0;$0;$80,000;$0;$0;$200,000;None;Y;01090004;010900040909;Sedimentation-Siltation;None;None;None;N;10/10/2008;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:62405" target="_blank">VIEW</a>;None;None;99125702;50
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040909;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;51
-RI;None;110517;Portsmouth: Septic System Replacement at Portsmouth Public Works Garage;2018;$30,000;$30,000;$0;$0;$0;$0;$0;$23,800;$0;$0;$53,800;None;Y;01090004;010900040909;None;None;None;None;N;04/01/2020;Not Initiated;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:110517" target="_blank">VIEW</a>;N;None;99125707;52
-RI;None;110519;NWQI Activities;2018;$30,000;$30,000;$0;$0;$0;$0;$0;$0;$0;$0;$30,000;None;N;01090004;010900040909;None;None;None;None;N;10/01/2017;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:110519" target="_blank">VIEW</a>;N;None;99125707;53
-RI;09-Water(NPS)-04;62200;Bristol Town Beach Stormwater Pipe Retrofit Construction Project;2008;$195,925;$0;$0;$0;$0;$0;$0;$27,808;$0;$0;$223,733;None;Y;01090004;010900040902;Sedimentation-Siltation,Phosphorus,Nitrogen,Biochemical Oxygen Demand (BOD);None;None;None;N;01/20/2011;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:62200" target="_blank">VIEW</a>;None;None;99125704;54
-RI;08-Water(NPS)-02;62361;Bristol Town Beach Stormwater Pipe Retrofit Design and Permitting Project;2005;$36,620;$0;$0;$0;$0;$0;$0;$24,213;$0;$0;$60,833;None;N;01090004;010900040902;None;None;None;None;N;06/17/2009;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:62361" target="_blank">VIEW</a>;None;None;99125702;55
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040902;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;56
-RI;None;119331;Buckeye Brook: Phragmites Removal Habitat Restoration;2019;$500,000;$500,000;$0;$0;$0;$0;$0;$333,334;$0;$0;$833,334;None;N;01090004;010900040902;None;None;None;None;N;06/01/2020;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:119331" target="_blank">VIEW</a>;N;None;99125707;57
-RI;None;119348;Buckeye Brook: Phragmites Removal Habitat Restoration;2021;$200,000;$200,000;$0;$0;$0;$0;$0;$333,334;$0;$0;$533,334;None;N;01090004;010900040902;None;None;None;None;N;06/01/2022;None;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:119348" target="_blank">VIEW</a>;N;[ { "title":"Buckeye Brook Watershed Plan", "link":"https://ordspub.epa.gov/ords/grts/GRTSADM.download_my_file?p_file=244003&p_page=PROJECT", "status":"Implementing Plan" }];99125708;58
-RI;09-Water(NPS)-04;89841;Bristol Town Beach Stormwater Pipe Retrofit Construction Project;2009;$2,475;$0;$0;$0;$0;$0;$0;$10,000;$0;$0;$12,475;None;N;01090004;010900040902;None;None;None;None;N;01/20/2011;None;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:89841" target="_blank">VIEW</a>;None;None;99125704;59
-RI;07-Water(NPS)-14;74064;Barrington: Allin's Cove 3rd Street Feasibility and Design Project;2006;$10,100;$0;$0;$0;$0;$0;$0;$6,733;$0;$0;$16,833;None;N;01090004;010900040902;None;None;None;None;N;03/02/2011;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74064" target="_blank">VIEW</a>;None;None;99125703;60
-RI;None;119334;Buckeye Brook: Phragmites Removal Habitat Restoration;2018;$366,000;$366,000;$0;$0;$0;$0;$0;$333,334;$0;$0;$699,334;None;N;01090004;010900040902;None;None;None;None;N;06/01/2020;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:119334" target="_blank">VIEW</a>;N;[ { "title":"Buckeye Brook Watershed Plan", "link":"https://ordspub.epa.gov/ords/grts/GRTSADM.download_my_file?p_file=244002&p_page=PROJECT", "status":"Implementing Plan" }];99125707;61
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040902;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;62
-RI;09-Water(NPS)-01;62360;Connection of Warwick Fire Station No. 5 to Municipal Sewer System;2002;$25,711;$0;$0;$0;$0;$0;$0;$5,148;$0;$0;$30,859;None;Y;01090004;010900040903;Nitrogen;None;None;None;N;06/14/2010;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:62360" target="_blank">VIEW</a>;None;None;99125701;63
-RI;'99-Water(NPS)-01;27781;Greenwich Bay Watershed Stormwater Treatment Project;2002;$34,000;$0;$0;$0;$0;$0;$0;$136,851;$0;$0;$170,851;None;Y;01090004;010900040903;Sedimentation-Siltation,Phosphorus,Nitrogen;None;None;None;N;11/22/1999;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:27781" target="_blank">VIEW</a>;None;None;99125701;64
-RI;07-Water(N05/B/G)-10;62440;East Greenwich: Hill and Harbour District Stormwater Infiltration Project;2007;$50,000;$0;$0;$0;$29,000;$60,978;$0;$32,000;$0;$0;$171,978;None;N;01090004;010900040903;None;None;None;None;N;08/30/2010;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:62440" target="_blank">VIEW</a>;None;None;99125703;65
-RI;01-Water(NPS)-08;73960;Greenwich Cove Restoration Project: Outfall #2;2009;$27,000;$0;$0;$0;$0;$0;$0;$17,334;$0;$0;$44,334;None;N;01090004;010900040903;None;None;None;None;N;06/30/2002;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:73960" target="_blank">VIEW</a>;None;None;99125704;66
-RI;14-Water(NPS)-04;103276;Warwick: Brushneck Cove Infiltraton Project at Asylum Road;2013;$31,455;$0;$0;$0;$0;$0;$0;$0;$0;$33,335;$64,790;None;Y;01090004;010900040903;Sedimentation-Siltation,Phosphorus,Nitrogen,Biochemical Oxygen Demand (BOD);5.07;0.33;0.06;N;02/19/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:103276" target="_blank">VIEW</a>;None;None;99125705;67
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040903;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;68
-RI;99-Water(NPS)-12;21262;Southern Rhode Island Conservation District - Greenwich Bay Stormwater Management Project;2002;$81,775;$0;$0;$0;$0;$0;$0;$0;$0;$0;$81,775;None;N;01090004;010900040903;None;None;None;None;N;05/16/2000;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:21262" target="_blank">VIEW</a>;None;None;99125701;69
-RI;04-Water(NPS)-10;62409;Tuscatucket Brook Stormwater Abatement Feasibility Study;2006;$34,450;$0;$0;$0;$0;$0;$0;$29,411;$0;$0;$63,861;None;N;01090004;010900040903;None;None;None;None;N;08/26/2008;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:62409" target="_blank">VIEW</a>;None;None;99125703;70
-RI;02-Water(NPS)-06;7992;Discouraging Waterfowl in the Fry Brook Watershed;2002;$10,000;$0;$0;$0;$0;$0;$0;$6,667;$0;$0;$16,667; ;N;01090004;010900040903;None;None;None;None;N;01/28/2004;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:7992" target="_blank">VIEW</a>;None;None;99125701;71
-RI;02-Water(NPS)-25;74000;Warwick Brushneck Cove Infiltration Project;2006;$12,478;$0;$0;$0;$0;$0;$0;$100,000;$0;$0;$112,478;a;N;01090004;010900040903;None;None;None;None;N;09/30/2008;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74000" target="_blank">VIEW</a>;None;None;99125703;72
-RI;07-Water(N05/B/G)-10;27001;East Greenwich: Hill and Harbour Stormwater Infiltration Project;2006;$29,000;$0;$0;$0;$0;$60,998;$0;$32,000;$0;$0;$121,998;None;Y;01090004;010900040903;Sedimentation-Siltation,Phosphorus,Nitrogen,Biochemical Oxygen Demand (BOD);None;None;None;N;08/30/2010;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:27001" target="_blank">VIEW</a>;None;None;99125703;73
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040903;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;74
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040605;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;75
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040605;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;76
-RI;2007-Water(B/G)-21;62880;Foster Salt Storage Structure;2002;$51,023;$0;$0;$0;$0;$0;$0;$34,016;$0;$0;$85,039;None;Y;01090004;010900040605;Sedimentation-Siltation;None;None;None;N;12/23/2008;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:62880" target="_blank">VIEW</a>;None;None;99125701;77
-RI;04-Water(NPS)-10;62409;Tuscatucket Brook Stormwater Abatement Feasibility Study;2006;$34,450;$0;$0;$0;$0;$0;$0;$29,411;$0;$0;$63,861;None;N;01090004;010900040609;None;None;None;None;N;08/26/2008;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:62409" target="_blank">VIEW</a>;None;None;99125703;78
-RI;04-Water(NPS)-04;73966;West Warwick Former Landfill Closure Project;2009;$20,000;$0;$0;$0;$0;$0;$0;$26,667;$0;$0;$46,667;None;N;01090004;010900040609;None;None;None;None;N;03/19/2007;Behind Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:73966" target="_blank">VIEW</a>;None;None;99125704;79
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040609;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;80
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040609;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;81
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040906;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;82
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040906;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;83
-RI;01-Water(NPS)-03;23808;Smithfield Public Works Facility Water Quality Restoration and Sediment Abatement Project;2001;$72,000;$0;$0;$0;$0;$0;$0;$48,000;$0;$0;$120,000;l;Y;01090004;010900040502;Sedimentation-Siltation,Phosphorus,Nitrogen,Biochemical Oxygen Demand (BOD);None;None;None;N;01/01/2003;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23808" target="_blank">VIEW</a>;None;None;99125700;84
-RI;02-Water(NPS)-22;73962;Woonasquatucket Reservoir Stormwater Abatement at Mann School Road;2006;$110,000;$0;$0;$0;$0;$109,000;$0;$122,473;$0;$0;$341,473;None;Y;01090004;010900040502;Sedimentation-Siltation,Phosphorus,Nitrogen,Biochemical Oxygen Demand (BOD);None;None;None;N;03/31/2009;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:73962" target="_blank">VIEW</a>;None;None;99125703;85
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040502;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;86
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040502;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;87
-RI;02-Water(NPS)-04;7954;Pollution Prevention Assessments in the Woonasquatucket River Watershed;2002;$53,333;$0;$0;$0;$0;$0;$11,308;$24,247;$0;$0;$88,888;None;N;01090004;010900040502;None;None;None;None;N;12/19/2003;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:7954" target="_blank">VIEW</a>;None;None;99125701;88
-RI;02-Water(NPS)-22;62401;Woonasquatucket Reservoir Stormwater Abatement at Mann School Road;2007;$61,377;$0;$0;$0;$0;$109,000;$0;$122,473;$0;$0;$292,850;None;Y;01090004;010900040502;Sedimentation-Siltation,Phosphorus,Nitrogen,Biochemical Oxygen Demand (BOD);None;None;None;N;03/31/2009;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:62401" target="_blank">VIEW</a>;None;None;99125703;89
-RI;99-Water(NPS)-04;21202;Nonpoint Source Pollution Abatement of the Sluiceway at the Lincoln Lace and Braid Brownfields Site;2002;$71,400;$0;$0;$0;$0;$0;$0;$47,633;$0;$0;$119,033;None;N;01090004;010900040502;None;None;None;None;N;01/12/2000;Discontinued;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:21202" target="_blank">VIEW</a>;None;None;99125701;90
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090003;010900030203;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;91
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090003;010900030203;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;92
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040501;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;93
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040501;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;94
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040601;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;95
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040601;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;96
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040604;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;97
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040604;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;98
-RI;11-Water(NPS)-02;103246;Village of North Scituate: Low Impact Development Retrofit and Education Project;2012;$97,979;$0;$0;$0;$0;$0;$0;$75,000;$0;$0;$172,979;None;Y;01090004;010900040604;Sedimentation-Siltation,Phosphorus,Nitrogen,Biochemical Oxygen Demand (BOD);5.8;1.2;0.3;N;01/09/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:103246" target="_blank">VIEW</a>;None;None;99125705;99
-RI;11-Water(NPS)-02;103249;Village of North Scituate: Low Impact Development Retrofit and Education Project;2011;$115,633;$0;$0;$0;$0;$0;$0;$75,000;$0;$0;$190,633;None;Y;01090004;010900040604;Sedimentation-Siltation,Phosphorus,Nitrogen,Biochemical Oxygen Demand (BOD);5.8;1.2;0.3;N;01/09/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:103249" target="_blank">VIEW</a>;None;None;99125705;100
-RI;08-Water(NPS)-07;40140;Rockland Pipe Stream Riparian Restoration - Providence Water Supply Board;2008;$15,000;$0;$0;$0;$0;$0;$0;$10,000;$0;$0;$25,000;None;Y;01090004;010900040606;Sedimentation-Siltation,Phosphorus,Nitrogen,Biochemical Oxygen Demand (BOD);None;None;None;N;05/16/2012;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:40140" target="_blank">VIEW</a>;None;None;99125704;101
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040606;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;102
-RI;11-Water(NPS)-02;103246;Village of North Scituate: Low Impact Development Retrofit and Education Project;2012;$97,979;$0;$0;$0;$0;$0;$0;$75,000;$0;$0;$172,979;None;Y;01090004;010900040606;Sedimentation-Siltation,Phosphorus,Nitrogen,Biochemical Oxygen Demand (BOD);5.8;1.2;0.3;N;01/09/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:103246" target="_blank">VIEW</a>;None;None;99125705;103
-RI;11-Water(NPS)-02;103249;Village of North Scituate: Low Impact Development Retrofit and Education Project;2011;$115,633;$0;$0;$0;$0;$0;$0;$75,000;$0;$0;$190,633;None;Y;01090004;010900040606;Sedimentation-Siltation,Phosphorus,Nitrogen,Biochemical Oxygen Demand (BOD);5.8;1.2;0.3;N;01/09/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:103249" target="_blank">VIEW</a>;None;None;99125705;104
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040606;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;105
-RI;00-Water(NPS)-01;23913;York Pond Restoration Project;2002;$145,536;$0;$0;$0;$0;$0;$0;$97,024;$0;$0;$242,560;None;Y;01090004;010900040901;Sedimentation-Siltation,Phosphorus,Nitrogen;None;None;None;N;01/30/2001;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23913" target="_blank">VIEW</a>;None;None;99125701;106
-RI;02-Water(NPS)-13;8005;Allin's Cove Water Quality Restoration - Interim Measure;2002;$13,500;$0;$0;$0;$0;$0;$0;$9,000;$0;$0;$22,500;None;N;01090004;010900040901;None;None;None;None;N;07/01/2004;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:8005" target="_blank">VIEW</a>;None;None;99125701;107
-RI;07-Water(NPS-05)-20;26862;Barrington: Allin's Cove Paper Street and Bay Spring Avenue Design and Construction Project;2006;$153,390;$0;$0;$0;$0;$116,709;$0;$75,058;$0;$0;$345,157;None;Y;01090004;010900040901;Sedimentation-Siltation,Phosphorus,Nitrogen,Biochemical Oxygen Demand (BOD);None;None;None;N;03/31/2009;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:26862" target="_blank">VIEW</a>;None;None;99125703;108
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040901;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;109
-RI;07-Water(NPS)-14;74064;Barrington: Allin's Cove 3rd Street Feasibility and Design Project;2006;$10,100;$0;$0;$0;$0;$0;$0;$6,733;$0;$0;$16,833;None;N;01090004;010900040901;None;None;None;None;N;03/02/2011;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74064" target="_blank">VIEW</a>;None;None;99125703;110
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040901;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;111
-RI;07-Water(N05/B/G)-11;40181;Sun Valley Storm Water Infiltration Project;2005;$147,000;$0;$0;$0;$0;$215,000;$0;$63,063;$0;$0;$425,063;None;Y;01090004;010900040904;Sedimentation-Siltation,Phosphorus,Nitrogen;None;None;None;N;03/01/2009;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:40181" target="_blank">VIEW</a>;None;None;99125702;112
-RI;09-Water(NPS)-03;62180;Sawmill Pond Watershed Restoration Project;2009;$240,859;$0;$0;$0;$0;$0;$0;$85,714;$0;$0;$326,573;None;Y;01090004;010900040904;Sedimentation-Siltation,Phosphorus,Nitrogen;None;None;None;N;05/20/2011;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:62180" target="_blank">VIEW</a>;None;None;99125704;113
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040904;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;114
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040904;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;115
-RI;02-Water(NPS)-06;7992;Discouraging Waterfowl in the Fry Brook Watershed;2002;$10,000;$0;$0;$0;$0;$0;$0;$6,667;$0;$0;$16,667; ;N;01090004;010900040904;None;None;None;None;N;01/28/2004;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:7992" target="_blank">VIEW</a>;None;None;99125701;116
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040907;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;117
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040907;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;118
-RI;04-Water(NPS)-05;23756;Middletown: Slate Hill Farm Stormwater Retrofit;2004;$14,402;$0;$0;$0;$0;$0;$0;$40,000;$0;$0;$54,402;None;Y;01090004;010900040907;Sedimentation-Siltation,Phosphorus,Nitrogen;None;None;None;N;08/01/2006;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;None;None;99125702;119
-RI;11-Water(NPS)-04;103251;Bristol: Guiteras School Property Retrofit;2012;$21,387;$0;$0;$0;$0;$0;$0;$300,000;$0;$0;$321,387;None;Y;01090004;010900040907;Sedimentation-Siltation,Phosphorus,Nitrogen;8;2.3;0.4;N;01/09/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:103251" target="_blank">VIEW</a>;None;None;99125705;120
-RI;None;110515;Bristol: Tanyard Reservoir Buffer Restoration Project;2017;$75,000;$75,000;$0;$0;$0;$0;$0;$0;$0;$0;$75,000;None;Y;01090004;010900040907;Sedimentation-Siltation,Phosphorus,Nitrogen;1209;137;28.7;N;05/01/2020;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:110515" target="_blank">VIEW</a>;N;[ { "title":"Bristol-Kickemuit Rivers Watershed Plan", "link":"https://ordspub.epa.gov/ords/grts/GRTSADM.download_my_file?p_file=209047&p_page=PROJECT", "status":"Implementing Plan" }];99125707;121
-RI;08-Water(NPS)-02;62361;Bristol Town Beach Stormwater Pipe Retrofit Design and Permitting Project;2005;$36,620;$0;$0;$0;$0;$0;$0;$24,213;$0;$0;$60,833;None;N;01090004;010900040907;None;None;None;None;N;06/17/2009;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:62361" target="_blank">VIEW</a>;None;None;99125702;122
-RI;None;119349;Bristol: Town Common North Parking Lot Stormwater Improvement Project;2021;$84,650;$84,650;$0;$0;$0;$0;$0;$56,500;$0;$0;$141,150;None;Y;01090004;010900040907;None;None;None;None;N;06/01/2022;Not Initiated;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:119349" target="_blank">VIEW</a>;N;[ { "title":"Bristol-Kickemuit Rivers Watershed Plan", "link":"https://ordspub.epa.gov/ords/grts/GRTSADM.download_my_file?p_file=227036&p_page=PROJECT", "status":"Implementing Plan" }];99125708;123
-RI;11-Water(NPS)-04;84320;Bristol: Guiteras School Property Retrofit;2011;$253,613;$0;$0;$0;$0;$0;$0;$300,000;$0;$0;$553,613;None;Y;01090004;010900040907;Sedimentation-Siltation,Phosphorus,Nitrogen;8;2.3;0.4;N;11/03/2014;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:84320" target="_blank">VIEW</a>;None;[ { "title":"Bristol-Kickemuit Rivers Watershed Plan", "link":"", "status":"" }];99125705;124
-RI;None;119320;Bristol: Bristol Police Station Stormwater Improvement Project;2020;$133,800;$133,800;$0;$0;$0;$0;$0;$89,200;$0;$0;$223,000;None;Y;01090004;010900040907;None;None;None;None;N;11/01/2022;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:119320" target="_blank">VIEW</a>;N;None;99125708;125
-RI;None;119330;Bristol: Bristol Golf Course Water Quality Improvements;2018;$87,000;$87,000;$0;$0;$0;$0;$0;$23,458;$0;$0;$110,458;None;Y;01090004;010900040907;Phosphorus,Nitrogen;3.62;0.46;0;N;07/30/2020;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:119330" target="_blank">VIEW</a>;N;[ { "title":"Bristol-Kickemuit Rivers Watershed Plan", "link":"https://ordspub.epa.gov/ords/grts/GRTSADM.download_my_file?p_file=244241&p_page=PROJECT", "status":"Implementing Plan" }];99125707;126
-RI;None;105351;NWQI Activities;2015;$125,000;$125,000;$0;$0;$0;$0;$0;$0;$0;$0;$125,000;None;N;01090004;010900040907;None;None;None;None;N;10/01/2014;None;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105351" target="_blank">VIEW</a>;N;None;99125706;127
-RI;04-Water(NPS)-05;62412;Middletown: Slate Hill Farm Stormwater Retrofit;2005;$11,017;$0;$0;$0;$0;$0;$0;$0;$0;$0;$11,017;None;Y;01090004;010900040907;Sedimentation-Siltation,Phosphorus,Nitrogen;None;None;None;N;08/10/2006;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:62412" target="_blank">VIEW</a>;None;None;99125702;128
-RI;None;103289;NWQI Activities;2016;$154,312;$154,312;$0;$0;$0;$0;$0;$0;$0;$0;$154,312;None;N;01090004;010900040907;None;None;None;None;N;01/09/2016;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:103289" target="_blank">VIEW</a>;N;None;99125706;129
-RI;None;119329;Aquidneck Island Planning Commission: Island Waters Best Management Practices Installation Project (WVTSs);2017;$250,000;$250,000;$0;$0;$0;$590,000;$0;$0;$0;$0;$840,000;None;Y;01090004;010900040907;Sedimentation-Siltation,Phosphorus,Nitrogen;665.3;199.3;10.7;N;08/01/2019;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:119329" target="_blank">VIEW</a>;N;None;99125707;130
-CT;13-01e-p;97870;NPS Management (ECCD);2013;$20,000;$0;$20,000;$0;$0;$0;$0;$0;$46,471;$0;$66,471;None;N;01100001;011000010301;None;None;None;None;N;08/28/2014;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:97870" target="_blank">VIEW</a>;None;None;00178013;131
-CT;22-01 ECCD;126960;Conservation Districts NPS Management Technical Assistance ECCD;2022;$40,000;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$40,000;None;N;01100001;011000010301;None;None;None;None;N;10/01/2022;Not Initiated;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:126960" target="_blank">VIEW</a>;N;None;00178022;132
-CT;11-01d-p;103213;Eastern Connecticut Conservation District - Nonpoint Source Management (ECCD);2011;$19,000;$0;$19,000;$0;$0;$0;$0;$0;$12,888;$0;$31,888;None;N;01100001;011000010301;None;None;None;None;N;05/31/2012;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:103213" target="_blank">VIEW</a>;None;None;00178011;133
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01100001;011000010301;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;134
-CT;15-01 ECCD (p)(i);99613;ECCD - NPS Management;2015;$20,000;$10,000;$10,000;$0;$0;$0;$0;$0;$0;$0;$20,000;None;N;01100001;011000010301;None;None;None;None;N;09/28/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:99613" target="_blank">VIEW</a>;N;None;00178015;135
-CT;21-01 ECCD;118102;Conservation Districts NPS Management Technical Assistance ECCD;2021;$30,000;$15,000;$15,000;$0;$0;$0;$0;$0;$0;$0;$30,000;None;N;01100001;011000010301;None;None;None;None;N;01/07/2022;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:118102" target="_blank">VIEW</a>;N;None;00178021;136
-CT;20-01 ECCD;113461;NPS Management Tech Assistance Block Grant ECCD;2020;$30,000;$15,000;$15,000;$0;$0;$0;$0;$0;$0;$0;$30,000;None;N;01100001;011000010301;None;None;None;None;N;02/02/2021;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:113461" target="_blank">VIEW</a>;N;None;00178020;137
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01100001;011000010301;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;138
-CT;12-01e-p;82726;NPS Watershed Management (ECCD);2012;$20,000;$0;$20,000;$0;$0;$0;$0;$0;$38,167;$0;$58,167;None;N;01100001;011000010301;None;None;None;None;N;08/30/2013;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:82726" target="_blank">VIEW</a>;None;None;00178012;139
-CT;16-02 ECCD(p)(i);103809;ECCD - NPS Management;2016;$20,000;$10,000;$10,000;$0;$0;$0;$0;$0;$0;$0;$20,000;None;N;01100001;011000010301;None;None;None;None;N;08/08/2017;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:103809" target="_blank">VIEW</a>;N;None;00178016;140
-CT;14-01 ECCD(p);97729;ECCD - NPS Management;2014;$20,000;$0;$20,000;$0;$0;$0;$0;$0;$37,708;$0;$57,708;None;N;01100001;011000010301;None;None;None;None;N;10/13/2015;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:97729" target="_blank">VIEW</a>;N;None;00178014;141
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;02030203;020302030000;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;142
-CT;19-05;110023;Implementation of the watershed based plan and pollution load reduction in the Saugatuck River watershed;2019;$62,241;$62,241;$0;$0;$0;$0;$0;$0;$5,615;$0;$67,856;None;N;02030203;020302030000;None;None;None;None;N;09/01/2020;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:110023" target="_blank">VIEW</a>;N;None;00178019;143
-NY;C700923(07AG36);42320;Sole Source Aquifer Protection;2007;$0;$0;$0;$0;$0;$79,170;$0;$24,403;$0;$0;$103,573;None;Y;02030203;020302030000;Sedimentation-Siltation,Phosphorus,Nitrogen;None;None;None;N;02/22/2008;None;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:42320" target="_blank">VIEW</a>;None;None;99257406;144
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;02030203;020302030000;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;145
-CT;14-03d;97741;Baker Cove Non-migratory Canada Geese Outreach, Education and Control (ECCD);2014;$36,000;$36,000;$0;$0;$0;$0;$0;$0;$0;$0;$36,000;None;N;02030203;020302030000;None;None;None;None;N;06/08/2017;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:97741" target="_blank">VIEW</a>;N;[ { "title":"Baker Cove Watershed Based Plan (2011)", "link":"", "status":"Implementing Plan" }];00178014;146
-NY;C302249(2000WQI4197);40160;Stormwater Abatement Activities at Flax Pond Wood Road, Crane neck Road;2003;$0;$0;$0;$0;$0;$48,750;$0;$48,750;$48,750;$0;$146,250;None;Y;02030203;020302030000;Sedimentation-Siltation,Phosphorus,Nitrogen;None;None;None;N;11/01/2003;None;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:40160" target="_blank">VIEW</a>;None;None;98288403;147
-NY;C302254(2000WQI4293);32460;Huntington Bay (V) Bay Hills DRAINAGE BASIN AREA I;2005;$0;$0;$0;$0;$0;$237,038;$0;$312,754;$0;$0;$549,792;None;Y;02030203;020302030000;Sedimentation-Siltation;None;None;None;N;04/01/1999;None;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:32460" target="_blank">VIEW</a>;None;None;97296705;148
-NY;C304366(2009WI10114);74480;Village of Port Jefferson Mill Creek Storm Drainage Infrastructure Sediment Removal and Vacuum Truck Purchase ;2011;$0;$0;$0;$0;$0;$247,500;$0;$82,500;$0;$0;$330,000;None;Y;02030203;020302030000;Sedimentation-Siltation,Phosphorus,Nitrogen;470;61;2029;N;02/01/2011;None;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74480" target="_blank">VIEW</a>;None;None;99257410;149
-NY;C302549(2003WQI6001);56280;Town of Huntington Stormwater Pilot Program Phase II;2009;$0;$0;$0;$0;$0;$191,041;$0;$191,041;$0;$0;$382,082;None;Y;02030203;020302030000;Sedimentation-Siltation,Phosphorus;None;None;None;N;01/02/2009;None;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:56280" target="_blank">VIEW</a>;None;None;99257408;150
-NY;C302255(2000WQI4292);32461;Huntington Bay (V) - Bay Crest  Willow Pond drainage  basin area G;2005;$0;$0;$0;$0;$0;$321,751;$0;$369,697;$0;$0;$691,448;None;Y;02030203;020302030000;Sedimentation-Siltation;None;None;None;N;04/01/1999;None;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:32461" target="_blank">VIEW</a>;None;None;97296705;151
-CT;11-09;103002;Hole in the Wall Beach Parking Lot Detention Basin Upgrade Project;2011;$1,811;$1,811;$0;$0;$0;$0;$0;$0;$6,189;$0;$8,000;None;Y;02030203;020302030000;Sedimentation-Siltation,Phosphorus,Nitrogen;138.9;17.4;3.4;N;06/29/2015;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:103002" target="_blank">VIEW</a>;None;None;00178011;152
-NY;C00087GG(2015WI56992);103471;Construction of Decentralized Wastewater Treatment Facility in the Peconic Estuary;2015;$0;$0;$0;$0;$0;$1,000,000;$0;$333,333;$0;$0;$1,333,333;None;Y;02030203;020302030000;None;None;None;None;N;02/01/2016;None;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:103471" target="_blank">VIEW</a>;N;None;99257414;153
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090002;010900020503;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;154
-RI;None;74140;Demonstration of Wetland Restoration - "8-Rod Farm" Tiverton, RI;2010;$42,565;$0;$0;$0;$0;$0;$0;$0;$0;$0;$42,565;None;N;01090002;010900020503;None;None;None;None;N;09/01/2012;Not Initiated;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74140" target="_blank">VIEW</a>;None;None;99125704;155
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090002;010900020503;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;156
-MA;11-02/319;63941;Westport Middle School;2007;$82,759;$0;$0;$0;$0;$0;$0;$116,598;$0;$0;$199,357;None;Y;01090002;010900020502;Sedimentation-Siltation,Nitrogen,Chemical Oxygen Demand (COD),Biochemical Oxygen Demand (BOD);None;None;None;N;07/05/2011;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:63941" target="_blank">VIEW</a>;None;None;99187807;157
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090002;010900020502;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;158
-MA;'02-06/319;8394;Head of Westport Stormwater Project;2002;$68,576;$0;$0;$0;$0;$0;$0;$179,812;$0;$0;$248,388;None;Y;01090002;010900020502;Sedimentation-Siltation,Phosphorus,Nitrogen;None;None;None;N;03/27/2003;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:8394" target="_blank">VIEW</a>;None;None;99187800;159
-MA;19-06/319;108087;Westport River Agricultural Nonpoint Source Program;2016;$196,200;$196,200;$0;$0;$0;$0;$0;$130,800;$0;$0;$327,000;None;Y;01090002;010900020502;Nitrogen;46080;0;0;N;02/07/2019;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:108087" target="_blank">VIEW</a>;N;None;99187811;160
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090002;010900020502;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;161
-MA;11-02/319;63940;Westport Middle School (Budget Copy);2006;$59,033;$0;$0;$0;$0;$0;$0;$39,356;$0;$0;$98,389;None;N;01090002;010900020502;None;None;None;None;N;06/15/2011;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:63940" target="_blank">VIEW</a>;None;None;99187804;162
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090003;010900030208;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;163
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090003;010900030208;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;164
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090003;010900030204;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;165
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090003;010900030204;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;166
-RI;09-Water(NPS)-02;70260;Stillwater Mill Porous Pavement Auxiliary Parking Lot Project;2007;$66,030;$0;$0;$0;$0;$0;$0;$25,200;$0;$0;$91,230;None;Y;01090003;010900030202;Sedimentation-Siltation,Phosphorus,Nitrogen,Biochemical Oxygen Demand (BOD);None;None;None;N;07/29/2010;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:70260" target="_blank">VIEW</a>;None;None;99125703;167
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090003;010900030202;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;168
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090003;010900030202;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;169
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040905;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;170
-RI;None;105381;Portsmouth: Septic System Installation at the Common Fence Point Improvement Association Community Hall;2016;$35,820;$35,820;$0;$0;$0;$0;$0;$35,820;$0;$0;$71,640;None;N;01090004;010900040905;None;None;None;None;N;03/30/2018;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105381" target="_blank">VIEW</a>;N;None;99125706;171
-RI;02-Water(NPS)-01;7925;Blue Tab Project for ID of Homes Not Tied Into Warren Sewers;2002;$2,000;$0;$0;$0;$0;$0;$0;$1,333;$0;$0;$3,333;None;N;01090004;010900040905;None;None;None;None;N;01/28/2004;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:7925" target="_blank">VIEW</a>;None;None;99125701;172
-RI;02-Water(NPS)-24;23685;Conceptual Design Study at Warren Town Beach and Belcher Cove;2003;$50,000;$0;$0;$0;$0;$0;$0;$33,333;$0;$0;$83,333;None;N;01090004;010900040905;None;None;None;None;N;06/29/2004;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23685" target="_blank">VIEW</a>;None;None;99125700;173
-RI;04-Water(NPS)-06;23760;Warren: Kickemuit Reservoir Stormwater Abatement Design and Implementation;2004;$30,000;$0;$0;$0;$0;$0;$0;$20,000;$0;$0;$50,000;None;N;01090004;010900040905;None;None;None;None;N;02/19/2010;Never Initiated;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23760" target="_blank">VIEW</a>;None;None;99125702;174
-RI;07-Water (319/05)-05;27684;Town Pond Environmental Restoration Project;2005;$144,512;$0;$0;$0;$0;$0;$0;$133,333;$0;$0;$277,845;None;N;01090004;010900040905;None;None;None;None;N;10/01/2007;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:27684" target="_blank">VIEW</a>;None;None;99125702;175
-RI;01-Water(NPS)-05;27723;Kickemuit Reservoir Stormwater Abatement Feasibility Study (Serpentine Road);2004;$7,900;$0;$0;$0;$0;$0;$0;$11,823;$0;$0;$19,723;None;N;01090004;010900040905;None;None;None;None;N;07/23/2003;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:27723" target="_blank">VIEW</a>;None;None;99125702;176
-RI;01-Water(NPS)-05;23852;Kickemuit Reservoir Stormwater Abatement Feasibility Study (Serpentine Road);2001;$30,000;$0;$0;$0;$0;$0;$0;$11,823;$0;$0;$41,823;None;N;01090004;010900040905;None;None;None;None;N;07/23/2003;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23852" target="_blank">VIEW</a>;None;None;99125700;177
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040905;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;178
-RI;00-Water(NPS)-04;7890;Patterson Avenue Stormwater Abatement Project;2000;$72,000;$0;$0;$0;$0;$0;$0;$100,187;$0;$0;$172,187;None;Y;01090004;010900040905;Sedimentation-Siltation,Phosphorus,Nitrogen;None;None;None;N;04/27/2001;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:7890" target="_blank">VIEW</a>;None;None;99125700;179
-RI;01-Water(NPS)-04;23851;Bay Road Stormwater Treatment Project;2001;$46,000;$0;$0;$0;$0;$0;$0;$30,533;$0;$0;$76,533;None;Y;01090004;010900040905;Sedimentation-Siltation,Phosphorus,Nitrogen;None;None;None;N;06/17/2002;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23851" target="_blank">VIEW</a>;None;None;99125700;180
-RI;02-Water(NPS)-24;23685;Conceptual Design Study at Warren Town Beach and Belcher Cove;2003;$50,000;$0;$0;$0;$0;$0;$0;$33,333;$0;$0;$83,333;None;N;01090004;010900040701;None;None;None;None;N;06/29/2004;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23685" target="_blank">VIEW</a>;None;None;99125700;181
-RI;00-Water(NPS)-07;23854;Kickemuit Reservoir Fish Ladder Project;2001;$83,000;$0;$0;$0;$0;$0;$0;$53,667;$0;$0;$136,667;None;N;01090004;010900040701;None;None;None;None;N;06/26/2001;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23854" target="_blank">VIEW</a>;None;None;99125700;182
-MA;17-04/319;101870;ACPP Technical Providers for the Palmer River Watershed-Part 2;2016;$505,900;$505,900;$0;$0;$0;$0;$0;$0;$0;$337,267;$843,167;None;Y;01090004;010900040701;Nitrogen;104625;0;0;N;12/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:101870" target="_blank">VIEW</a>;N;[ { "title":"Watershed-Based Plan Palmer RIver Watershed", "link":"https://ordspub.epa.gov/ords/grts/GRTSADM.download_my_file?p_file=224396&p_page=PROJECT", "status":"Implementing Plan" }];99187811;183
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040701;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;184
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040701;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;185
-RI;01-Water(NPS)-05;27723;Kickemuit Reservoir Stormwater Abatement Feasibility Study (Serpentine Road);2004;$7,900;$0;$0;$0;$0;$0;$0;$11,823;$0;$0;$19,723;None;N;01090004;010900040701;None;None;None;None;N;07/23/2003;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:27723" target="_blank">VIEW</a>;None;None;99125702;186
-RI;07-Water(NPS)-03;40382;Warren Salt Storage Facility;2007;$100,000;$0;$0;$0;$0;$0;$0;$66,670;$0;$0;$166,670;None;Y;01090004;010900040701;Sedimentation-Siltation;None;None;None;N;09/01/2009;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:40382" target="_blank">VIEW</a>;None;None;99125703;187
-MA;13-08/319;96045;ACPP Technical Providers for the Palmer River Watershed;2013;$200,000;$200,000;$0;$0;$0;$0;$0;$150,570;$0;$0;$350,570;None;Y;01090004;010900040701;Nitrogen;49506;0;0;N;02/10/2014;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:96045" target="_blank">VIEW</a>;None;None;99187810;188
-MA;'02-02/319;8147;Wall Street Highway Yard Stormwater Improvements;2002;$90,045;$0;$0;$0;$0;$0;$0;$104,850;$0;$0;$194,895;None;Y;01090004;010900040401;Sedimentation-Siltation,Phosphorus,Nitrogen;None;None;None;N;02/20/2003;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:8147" target="_blank">VIEW</a>;None;None;99187800;189
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040401;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;190
-RI;08-Water(NPS)-10;84501;Ten Mile River Aquatic Ecosystem Restoration Project;2008;$175,000;$0;$0;$0;$0;$1,060,000;$0;$0;$0;$0;$1,235,000;None;N;01090004;010900040401;None;None;None;None;N;09/23/2010;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:84501" target="_blank">VIEW</a>;None;None;99125704;191
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040401;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;192
-RI;02-Water(NPS)-17;23636;East Providence DPW Salt Storage Facility;2003;$40,000;$0;$0;$0;$0;$0;$0;$26,667;$0;$0;$66,667;None;Y;01090004;010900040702;Road Salt or Deicer;None;None;None;N;07/02/2004;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23636" target="_blank">VIEW</a>;None;None;99125700;193
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040702;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;194
-RI;04-Water(NPS)-01;23641;Barrington Salt Storage Facility;2004;$60,000;$0;$0;$0;$0;$0;$0;$40,000;$0;$0;$100,000;None;Y;01090004;010900040702;Sedimentation-Siltation,Road Salt or Deicer;None;None;None;N;02/07/2006;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23641" target="_blank">VIEW</a>;None;None;99125702;195
-RI;02-Water(NPS)-24;23685;Conceptual Design Study at Warren Town Beach and Belcher Cove;2003;$50,000;$0;$0;$0;$0;$0;$0;$33,333;$0;$0;$83,333;None;N;01090004;010900040702;None;None;None;None;N;06/29/2004;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23685" target="_blank">VIEW</a>;None;None;99125700;196
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040702;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;197
-RI;04-Water(NPS)-07;23761;Warren Town Beach Stormwater Treatment Feasibility and Design;2004;$19,616;$0;$0;$0;$0;$0;$0;$13,077;$0;$0;$32,693;None;N;01090004;010900040702;None;None;None;None;N;07/17/2008;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23761" target="_blank">VIEW</a>;None;None;99125702;198
-RI;14-Water(NPS)-01;103274;Warren: Water Street Subsurface Infiltration Chambers Final Design and Construction;2012;$63,190;$63,190;$0;$0;$0;$0;$0;$0;$0;$0;$63,190;p;Y;01090004;010900040702;Sedimentation-Siltation,Phosphorus,Nitrogen,Biochemical Oxygen Demand (BOD);169.3;30.8;5.8;N;03/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:103274" target="_blank">VIEW</a>;None;None;99125705;199
-RI;17-Water(NPS)-;110516;Warren:  Warren Boulevard Stream Channel Restoration;2017;$53,661;$53,661;$0;$0;$0;$0;$0;$36,814;$0;$0;$90,475;None;N;01090004;010900040702;None;None;None;None;N;03/01/2019;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:110516" target="_blank">VIEW</a>;N;[ { "title":"Bristol-Palmer-Warren Rivers Watershed Plan", "link":"", "status":"Implementing Plan" }];99125707;200
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090003;010900030207;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;201
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090003;010900030207;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;202
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090003;010900030205;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;203
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090003;010900030206;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;204
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090003;010900030206;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;205
-RI;11-Water(NPS)-01;74040;Advanced Onsite Wastewater Management for Entire PPA Term;2011;$58,000;$0;$0;$0;$0;$25,000;$0;$0;$0;$0;$83,000;None;Y;01090004;010900040803;Nitrogen;47747.7;0;0;Y;01/01/1999;On Schedule;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:74040" target="_blank">VIEW</a>;None;None;99125705;206
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;01090004;010900040803;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;207
-RI;None;105391;Advanced Onsite Wastewater Management and Cesspool Phaseout;2017;$20,000;$20,000;$0;$0;$0;$0;$0;$0;$0;$0;$20,000;None;Y;02030202;020302020804;Nitrogen;4504.5;0;0;Y;10/01/2016;Completed;<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:105391" target="_blank">VIEW</a>;N;None;99125707;208
+state;Counter
+RI;0
+04-Water(NPS)-05;1
+23756;2
+Middletown: Slate Hill Farm Stormwater Retrofit;3
+2004;4
+$14,402;5
+$0;6
+$0;7
+$0;8
+$0;9
+$0;10
+$0;11
+$40,000;12
+$0;13
+$0;14
+$54,402;15
+None;16
+Y;17
+01090004;18
+010900040911;19
+Sedimentation-Siltation,Phosphorus,Nitrogen;20
+None;21
+None;22
+None;23
+N;24
+08/01/2006;25
+Completed;26
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;27
+None;28
+None;29
+99125702;30
+RI;31
+04-Water(NPS)-05;32
+23756;33
+Middletown: Slate Hill Farm Stormwater Retrofit;34
+2004;35
+$14,402;36
+$0;37
+$0;38
+$0;39
+$0;40
+$0;41
+$0;42
+$40,000;43
+$0;44
+$0;45
+$54,402;46
+None;47
+Y;48
+01090004;49
+010900040911;50
+Sedimentation-Siltation,Phosphorus,Nitrogen;51
+None;52
+None;53
+None;54
+N;55
+08/01/2006;56
+Completed;57
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;58
+None;59
+None;60
+99125702;61
+st_prj_no;Counter
+RI;62
+04-Water(NPS)-05;63
+23756;64
+Middletown: Slate Hill Farm Stormwater Retrofit;65
+2004;66
+$14,402;67
+$0;68
+$0;69
+$0;70
+$0;71
+$0;72
+$0;73
+$40,000;74
+$0;75
+$0;76
+$54,402;77
+None;78
+Y;79
+01090004;80
+010900040911;81
+Sedimentation-Siltation,Phosphorus,Nitrogen;82
+None;83
+None;84
+None;85
+N;86
+08/01/2006;87
+Completed;88
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;89
+None;90
+None;91
+99125702;92
+RI;93
+04-Water(NPS)-05;94
+23756;95
+Middletown: Slate Hill Farm Stormwater Retrofit;96
+2004;97
+$14,402;98
+$0;99
+$0;100
+$0;101
+$0;102
+$0;103
+$0;104
+$40,000;105
+$0;106
+$0;107
+$54,402;108
+None;109
+Y;110
+01090004;111
+010900040911;112
+Sedimentation-Siltation,Phosphorus,Nitrogen;113
+None;114
+None;115
+None;116
+N;117
+08/01/2006;118
+Completed;119
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;120
+None;121
+None;122
+99125702;123
+prj_seq;Counter
+RI;124
+04-Water(NPS)-05;125
+23756;126
+Middletown: Slate Hill Farm Stormwater Retrofit;127
+2004;128
+$14,402;129
+$0;130
+$0;131
+$0;132
+$0;133
+$0;134
+$0;135
+$40,000;136
+$0;137
+$0;138
+$54,402;139
+None;140
+Y;141
+01090004;142
+010900040911;143
+Sedimentation-Siltation,Phosphorus,Nitrogen;144
+None;145
+None;146
+None;147
+N;148
+08/01/2006;149
+Completed;150
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;151
+None;152
+None;153
+99125702;154
+RI;155
+04-Water(NPS)-05;156
+23756;157
+Middletown: Slate Hill Farm Stormwater Retrofit;158
+2004;159
+$14,402;160
+$0;161
+$0;162
+$0;163
+$0;164
+$0;165
+$0;166
+$40,000;167
+$0;168
+$0;169
+$54,402;170
+None;171
+Y;172
+01090004;173
+010900040911;174
+Sedimentation-Siltation,Phosphorus,Nitrogen;175
+None;176
+None;177
+None;178
+N;179
+08/01/2006;180
+Completed;181
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;182
+None;183
+None;184
+99125702;185
+prj_title;Counter
+RI;186
+04-Water(NPS)-05;187
+23756;188
+Middletown: Slate Hill Farm Stormwater Retrofit;189
+2004;190
+$14,402;191
+$0;192
+$0;193
+$0;194
+$0;195
+$0;196
+$0;197
+$40,000;198
+$0;199
+$0;200
+$54,402;201
+None;202
+Y;203
+01090004;204
+010900040911;205
+Sedimentation-Siltation,Phosphorus,Nitrogen;206
+None;207
+None;208
+None;209
+N;210
+08/01/2006;211
+Completed;212
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;213
+None;214
+None;215
+99125702;216
+RI;217
+04-Water(NPS)-05;218
+23756;219
+Middletown: Slate Hill Farm Stormwater Retrofit;220
+2004;221
+$14,402;222
+$0;223
+$0;224
+$0;225
+$0;226
+$0;227
+$0;228
+$40,000;229
+$0;230
+$0;231
+$54,402;232
+None;233
+Y;234
+01090004;235
+010900040911;236
+Sedimentation-Siltation,Phosphorus,Nitrogen;237
+None;238
+None;239
+None;240
+N;241
+08/01/2006;242
+Completed;243
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;244
+None;245
+None;246
+99125702;247
+approp_year;Counter
+RI;248
+04-Water(NPS)-05;249
+23756;250
+Middletown: Slate Hill Farm Stormwater Retrofit;251
+2004;252
+$14,402;253
+$0;254
+$0;255
+$0;256
+$0;257
+$0;258
+$0;259
+$40,000;260
+$0;261
+$0;262
+$54,402;263
+None;264
+Y;265
+01090004;266
+010900040911;267
+Sedimentation-Siltation,Phosphorus,Nitrogen;268
+None;269
+None;270
+None;271
+N;272
+08/01/2006;273
+Completed;274
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;275
+None;276
+None;277
+99125702;278
+RI;279
+04-Water(NPS)-05;280
+23756;281
+Middletown: Slate Hill Farm Stormwater Retrofit;282
+2004;283
+$14,402;284
+$0;285
+$0;286
+$0;287
+$0;288
+$0;289
+$0;290
+$40,000;291
+$0;292
+$0;293
+$54,402;294
+None;295
+Y;296
+01090004;297
+010900040911;298
+Sedimentation-Siltation,Phosphorus,Nitrogen;299
+None;300
+None;301
+None;302
+N;303
+08/01/2006;304
+Completed;305
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;306
+None;307
+None;308
+99125702;309
+total_319_funds;Counter
+RI;310
+04-Water(NPS)-05;311
+23756;312
+Middletown: Slate Hill Farm Stormwater Retrofit;313
+2004;314
+$14,402;315
+$0;316
+$0;317
+$0;318
+$0;319
+$0;320
+$0;321
+$40,000;322
+$0;323
+$0;324
+$54,402;325
+None;326
+Y;327
+01090004;328
+010900040911;329
+Sedimentation-Siltation,Phosphorus,Nitrogen;330
+None;331
+None;332
+None;333
+N;334
+08/01/2006;335
+Completed;336
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;337
+None;338
+None;339
+99125702;340
+RI;341
+04-Water(NPS)-05;342
+23756;343
+Middletown: Slate Hill Farm Stormwater Retrofit;344
+2004;345
+$14,402;346
+$0;347
+$0;348
+$0;349
+$0;350
+$0;351
+$0;352
+$40,000;353
+$0;354
+$0;355
+$54,402;356
+None;357
+Y;358
+01090004;359
+010900040911;360
+Sedimentation-Siltation,Phosphorus,Nitrogen;361
+None;362
+None;363
+None;364
+N;365
+08/01/2006;366
+Completed;367
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;368
+None;369
+None;370
+99125702;371
+project_dollars;Counter
+RI;372
+04-Water(NPS)-05;373
+23756;374
+Middletown: Slate Hill Farm Stormwater Retrofit;375
+2004;376
+$14,402;377
+$0;378
+$0;379
+$0;380
+$0;381
+$0;382
+$0;383
+$40,000;384
+$0;385
+$0;386
+$54,402;387
+None;388
+Y;389
+01090004;390
+010900040911;391
+Sedimentation-Siltation,Phosphorus,Nitrogen;392
+None;393
+None;394
+None;395
+N;396
+08/01/2006;397
+Completed;398
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;399
+None;400
+None;401
+99125702;402
+RI;403
+04-Water(NPS)-05;404
+23756;405
+Middletown: Slate Hill Farm Stormwater Retrofit;406
+2004;407
+$14,402;408
+$0;409
+$0;410
+$0;411
+$0;412
+$0;413
+$0;414
+$40,000;415
+$0;416
+$0;417
+$54,402;418
+None;419
+Y;420
+01090004;421
+010900040911;422
+Sedimentation-Siltation,Phosphorus,Nitrogen;423
+None;424
+None;425
+None;426
+N;427
+08/01/2006;428
+Completed;429
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;430
+None;431
+None;432
+99125702;433
+program_dollars;Counter
+RI;434
+04-Water(NPS)-05;435
+23756;436
+Middletown: Slate Hill Farm Stormwater Retrofit;437
+2004;438
+$14,402;439
+$0;440
+$0;441
+$0;442
+$0;443
+$0;444
+$0;445
+$40,000;446
+$0;447
+$0;448
+$54,402;449
+None;450
+Y;451
+01090004;452
+010900040911;453
+Sedimentation-Siltation,Phosphorus,Nitrogen;454
+None;455
+None;456
+None;457
+N;458
+08/01/2006;459
+Completed;460
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;461
+None;462
+None;463
+99125702;464
+RI;465
+04-Water(NPS)-05;466
+23756;467
+Middletown: Slate Hill Farm Stormwater Retrofit;468
+2004;469
+$14,402;470
+$0;471
+$0;472
+$0;473
+$0;474
+$0;475
+$0;476
+$40,000;477
+$0;478
+$0;479
+$54,402;480
+None;481
+Y;482
+01090004;483
+010900040911;484
+Sedimentation-Siltation,Phosphorus,Nitrogen;485
+None;486
+None;487
+None;488
+N;489
+08/01/2006;490
+Completed;491
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;492
+None;493
+None;494
+99125702;495
+epa_other;Counter
+RI;496
+04-Water(NPS)-05;497
+23756;498
+Middletown: Slate Hill Farm Stormwater Retrofit;499
+2004;500
+$14,402;501
+$0;502
+$0;503
+$0;504
+$0;505
+$0;506
+$0;507
+$40,000;508
+$0;509
+$0;510
+$54,402;511
+None;512
+Y;513
+01090004;514
+010900040911;515
+Sedimentation-Siltation,Phosphorus,Nitrogen;516
+None;517
+None;518
+None;519
+N;520
+08/01/2006;521
+Completed;522
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;523
+None;524
+None;525
+99125702;526
+RI;527
+04-Water(NPS)-05;528
+23756;529
+Middletown: Slate Hill Farm Stormwater Retrofit;530
+2004;531
+$14,402;532
+$0;533
+$0;534
+$0;535
+$0;536
+$0;537
+$0;538
+$40,000;539
+$0;540
+$0;541
+$54,402;542
+None;543
+Y;544
+01090004;545
+010900040911;546
+Sedimentation-Siltation,Phosphorus,Nitrogen;547
+None;548
+None;549
+None;550
+N;551
+08/01/2006;552
+Completed;553
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;554
+None;555
+None;556
+99125702;557
+other_federal;Counter
+RI;558
+04-Water(NPS)-05;559
+23756;560
+Middletown: Slate Hill Farm Stormwater Retrofit;561
+2004;562
+$14,402;563
+$0;564
+$0;565
+$0;566
+$0;567
+$0;568
+$0;569
+$40,000;570
+$0;571
+$0;572
+$54,402;573
+None;574
+Y;575
+01090004;576
+010900040911;577
+Sedimentation-Siltation,Phosphorus,Nitrogen;578
+None;579
+None;580
+None;581
+N;582
+08/01/2006;583
+Completed;584
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;585
+None;586
+None;587
+99125702;588
+RI;589
+04-Water(NPS)-05;590
+23756;591
+Middletown: Slate Hill Farm Stormwater Retrofit;592
+2004;593
+$14,402;594
+$0;595
+$0;596
+$0;597
+$0;598
+$0;599
+$0;600
+$40,000;601
+$0;602
+$0;603
+$54,402;604
+None;605
+Y;606
+01090004;607
+010900040911;608
+Sedimentation-Siltation,Phosphorus,Nitrogen;609
+None;610
+None;611
+None;612
+N;613
+08/01/2006;614
+Completed;615
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;616
+None;617
+None;618
+99125702;619
+state_funds;Counter
+RI;620
+04-Water(NPS)-05;621
+23756;622
+Middletown: Slate Hill Farm Stormwater Retrofit;623
+2004;624
+$14,402;625
+$0;626
+$0;627
+$0;628
+$0;629
+$0;630
+$0;631
+$40,000;632
+$0;633
+$0;634
+$54,402;635
+None;636
+Y;637
+01090004;638
+010900040911;639
+Sedimentation-Siltation,Phosphorus,Nitrogen;640
+None;641
+None;642
+None;643
+N;644
+08/01/2006;645
+Completed;646
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;647
+None;648
+None;649
+99125702;650
+RI;651
+04-Water(NPS)-05;652
+23756;653
+Middletown: Slate Hill Farm Stormwater Retrofit;654
+2004;655
+$14,402;656
+$0;657
+$0;658
+$0;659
+$0;660
+$0;661
+$0;662
+$40,000;663
+$0;664
+$0;665
+$54,402;666
+None;667
+Y;668
+01090004;669
+010900040911;670
+Sedimentation-Siltation,Phosphorus,Nitrogen;671
+None;672
+None;673
+None;674
+N;675
+08/01/2006;676
+Completed;677
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;678
+None;679
+None;680
+99125702;681
+state_in_kind;Counter
+RI;682
+04-Water(NPS)-05;683
+23756;684
+Middletown: Slate Hill Farm Stormwater Retrofit;685
+2004;686
+$14,402;687
+$0;688
+$0;689
+$0;690
+$0;691
+$0;692
+$0;693
+$40,000;694
+$0;695
+$0;696
+$54,402;697
+None;698
+Y;699
+01090004;700
+010900040911;701
+Sedimentation-Siltation,Phosphorus,Nitrogen;702
+None;703
+None;704
+None;705
+N;706
+08/01/2006;707
+Completed;708
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;709
+None;710
+None;711
+99125702;712
+RI;713
+04-Water(NPS)-05;714
+23756;715
+Middletown: Slate Hill Farm Stormwater Retrofit;716
+2004;717
+$14,402;718
+$0;719
+$0;720
+$0;721
+$0;722
+$0;723
+$0;724
+$40,000;725
+$0;726
+$0;727
+$54,402;728
+None;729
+Y;730
+01090004;731
+010900040911;732
+Sedimentation-Siltation,Phosphorus,Nitrogen;733
+None;734
+None;735
+None;736
+N;737
+08/01/2006;738
+Completed;739
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;740
+None;741
+None;742
+99125702;743
+local_funds;Counter
+RI;744
+04-Water(NPS)-05;745
+23756;746
+Middletown: Slate Hill Farm Stormwater Retrofit;747
+2004;748
+$14,402;749
+$0;750
+$0;751
+$0;752
+$0;753
+$0;754
+$0;755
+$40,000;756
+$0;757
+$0;758
+$54,402;759
+None;760
+Y;761
+01090004;762
+010900040911;763
+Sedimentation-Siltation,Phosphorus,Nitrogen;764
+None;765
+None;766
+None;767
+N;768
+08/01/2006;769
+Completed;770
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;771
+None;772
+None;773
+99125702;774
+RI;775
+04-Water(NPS)-05;776
+23756;777
+Middletown: Slate Hill Farm Stormwater Retrofit;778
+2004;779
+$14,402;780
+$0;781
+$0;782
+$0;783
+$0;784
+$0;785
+$0;786
+$40,000;787
+$0;788
+$0;789
+$54,402;790
+None;791
+Y;792
+01090004;793
+010900040911;794
+Sedimentation-Siltation,Phosphorus,Nitrogen;795
+None;796
+None;797
+None;798
+N;799
+08/01/2006;800
+Completed;801
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;802
+None;803
+None;804
+99125702;805
+other_funds;Counter
+RI;806
+04-Water(NPS)-05;807
+23756;808
+Middletown: Slate Hill Farm Stormwater Retrofit;809
+2004;810
+$14,402;811
+$0;812
+$0;813
+$0;814
+$0;815
+$0;816
+$0;817
+$40,000;818
+$0;819
+$0;820
+$54,402;821
+None;822
+Y;823
+01090004;824
+010900040911;825
+Sedimentation-Siltation,Phosphorus,Nitrogen;826
+None;827
+None;828
+None;829
+N;830
+08/01/2006;831
+Completed;832
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;833
+None;834
+None;835
+99125702;836
+RI;837
+04-Water(NPS)-05;838
+23756;839
+Middletown: Slate Hill Farm Stormwater Retrofit;840
+2004;841
+$14,402;842
+$0;843
+$0;844
+$0;845
+$0;846
+$0;847
+$0;848
+$40,000;849
+$0;850
+$0;851
+$54,402;852
+None;853
+Y;854
+01090004;855
+010900040911;856
+Sedimentation-Siltation,Phosphorus,Nitrogen;857
+None;858
+None;859
+None;860
+N;861
+08/01/2006;862
+Completed;863
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;864
+None;865
+None;866
+99125702;867
+local_in_kind;Counter
+RI;868
+04-Water(NPS)-05;869
+23756;870
+Middletown: Slate Hill Farm Stormwater Retrofit;871
+2004;872
+$14,402;873
+$0;874
+$0;875
+$0;876
+$0;877
+$0;878
+$0;879
+$40,000;880
+$0;881
+$0;882
+$54,402;883
+None;884
+Y;885
+01090004;886
+010900040911;887
+Sedimentation-Siltation,Phosphorus,Nitrogen;888
+None;889
+None;890
+None;891
+N;892
+08/01/2006;893
+Completed;894
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;895
+None;896
+None;897
+99125702;898
+RI;899
+04-Water(NPS)-05;900
+23756;901
+Middletown: Slate Hill Farm Stormwater Retrofit;902
+2004;903
+$14,402;904
+$0;905
+$0;906
+$0;907
+$0;908
+$0;909
+$0;910
+$40,000;911
+$0;912
+$0;913
+$54,402;914
+None;915
+Y;916
+01090004;917
+010900040911;918
+Sedimentation-Siltation,Phosphorus,Nitrogen;919
+None;920
+None;921
+None;922
+N;923
+08/01/2006;924
+Completed;925
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;926
+None;927
+None;928
+99125702;929
+total_budget;Counter
+RI;930
+04-Water(NPS)-05;931
+23756;932
+Middletown: Slate Hill Farm Stormwater Retrofit;933
+2004;934
+$14,402;935
+$0;936
+$0;937
+$0;938
+$0;939
+$0;940
+$0;941
+$40,000;942
+$0;943
+$0;944
+$54,402;945
+None;946
+Y;947
+01090004;948
+010900040911;949
+Sedimentation-Siltation,Phosphorus,Nitrogen;950
+None;951
+None;952
+None;953
+N;954
+08/01/2006;955
+Completed;956
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;957
+None;958
+None;959
+99125702;960
+RI;961
+04-Water(NPS)-05;962
+23756;963
+Middletown: Slate Hill Farm Stormwater Retrofit;964
+2004;965
+$14,402;966
+$0;967
+$0;968
+$0;969
+$0;970
+$0;971
+$0;972
+$40,000;973
+$0;974
+$0;975
+$54,402;976
+None;977
+Y;978
+01090004;979
+010900040911;980
+Sedimentation-Siltation,Phosphorus,Nitrogen;981
+None;982
+None;983
+None;984
+N;985
+08/01/2006;986
+Completed;987
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;988
+None;989
+None;990
+99125702;991
+description;Counter
+RI;992
+04-Water(NPS)-05;993
+23756;994
+Middletown: Slate Hill Farm Stormwater Retrofit;995
+2004;996
+$14,402;997
+$0;998
+$0;999
+$0;1000
+$0;1001
+$0;1002
+$0;1003
+$40,000;1004
+$0;1005
+$0;1006
+$54,402;1007
+None;1008
+Y;1009
+01090004;1010
+010900040911;1011
+Sedimentation-Siltation,Phosphorus,Nitrogen;1012
+None;1013
+None;1014
+None;1015
+N;1016
+08/01/2006;1017
+Completed;1018
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1019
+None;1020
+None;1021
+99125702;1022
+RI;1023
+04-Water(NPS)-05;1024
+23756;1025
+Middletown: Slate Hill Farm Stormwater Retrofit;1026
+2004;1027
+$14,402;1028
+$0;1029
+$0;1030
+$0;1031
+$0;1032
+$0;1033
+$0;1034
+$40,000;1035
+$0;1036
+$0;1037
+$54,402;1038
+None;1039
+Y;1040
+01090004;1041
+010900040911;1042
+Sedimentation-Siltation,Phosphorus,Nitrogen;1043
+None;1044
+None;1045
+None;1046
+N;1047
+08/01/2006;1048
+Completed;1049
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1050
+None;1051
+None;1052
+99125702;1053
+will_has_load_reductions_ind;Counter
+RI;1054
+04-Water(NPS)-05;1055
+23756;1056
+Middletown: Slate Hill Farm Stormwater Retrofit;1057
+2004;1058
+$14,402;1059
+$0;1060
+$0;1061
+$0;1062
+$0;1063
+$0;1064
+$0;1065
+$40,000;1066
+$0;1067
+$0;1068
+$54,402;1069
+None;1070
+Y;1071
+01090004;1072
+010900040911;1073
+Sedimentation-Siltation,Phosphorus,Nitrogen;1074
+None;1075
+None;1076
+None;1077
+N;1078
+08/01/2006;1079
+Completed;1080
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1081
+None;1082
+None;1083
+99125702;1084
+RI;1085
+04-Water(NPS)-05;1086
+23756;1087
+Middletown: Slate Hill Farm Stormwater Retrofit;1088
+2004;1089
+$14,402;1090
+$0;1091
+$0;1092
+$0;1093
+$0;1094
+$0;1095
+$0;1096
+$40,000;1097
+$0;1098
+$0;1099
+$54,402;1100
+None;1101
+Y;1102
+01090004;1103
+010900040911;1104
+Sedimentation-Siltation,Phosphorus,Nitrogen;1105
+None;1106
+None;1107
+None;1108
+N;1109
+08/01/2006;1110
+Completed;1111
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1112
+None;1113
+None;1114
+99125702;1115
+huc_8;Counter
+RI;1116
+04-Water(NPS)-05;1117
+23756;1118
+Middletown: Slate Hill Farm Stormwater Retrofit;1119
+2004;1120
+$14,402;1121
+$0;1122
+$0;1123
+$0;1124
+$0;1125
+$0;1126
+$0;1127
+$40,000;1128
+$0;1129
+$0;1130
+$54,402;1131
+None;1132
+Y;1133
+01090004;1134
+010900040911;1135
+Sedimentation-Siltation,Phosphorus,Nitrogen;1136
+None;1137
+None;1138
+None;1139
+N;1140
+08/01/2006;1141
+Completed;1142
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1143
+None;1144
+None;1145
+99125702;1146
+RI;1147
+04-Water(NPS)-05;1148
+23756;1149
+Middletown: Slate Hill Farm Stormwater Retrofit;1150
+2004;1151
+$14,402;1152
+$0;1153
+$0;1154
+$0;1155
+$0;1156
+$0;1157
+$0;1158
+$40,000;1159
+$0;1160
+$0;1161
+$54,402;1162
+None;1163
+Y;1164
+01090004;1165
+010900040911;1166
+Sedimentation-Siltation,Phosphorus,Nitrogen;1167
+None;1168
+None;1169
+None;1170
+N;1171
+08/01/2006;1172
+Completed;1173
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1174
+None;1175
+None;1176
+99125702;1177
+huc_12;Counter
+RI;1178
+04-Water(NPS)-05;1179
+23756;1180
+Middletown: Slate Hill Farm Stormwater Retrofit;1181
+2004;1182
+$14,402;1183
+$0;1184
+$0;1185
+$0;1186
+$0;1187
+$0;1188
+$0;1189
+$40,000;1190
+$0;1191
+$0;1192
+$54,402;1193
+None;1194
+Y;1195
+01090004;1196
+010900040911;1197
+Sedimentation-Siltation,Phosphorus,Nitrogen;1198
+None;1199
+None;1200
+None;1201
+N;1202
+08/01/2006;1203
+Completed;1204
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1205
+None;1206
+None;1207
+99125702;1208
+RI;1209
+04-Water(NPS)-05;1210
+23756;1211
+Middletown: Slate Hill Farm Stormwater Retrofit;1212
+2004;1213
+$14,402;1214
+$0;1215
+$0;1216
+$0;1217
+$0;1218
+$0;1219
+$0;1220
+$40,000;1221
+$0;1222
+$0;1223
+$54,402;1224
+None;1225
+Y;1226
+01090004;1227
+010900040911;1228
+Sedimentation-Siltation,Phosphorus,Nitrogen;1229
+None;1230
+None;1231
+None;1232
+N;1233
+08/01/2006;1234
+Completed;1235
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1236
+None;1237
+None;1238
+99125702;1239
+pollutants;Counter
+RI;1240
+04-Water(NPS)-05;1241
+23756;1242
+Middletown: Slate Hill Farm Stormwater Retrofit;1243
+2004;1244
+$14,402;1245
+$0;1246
+$0;1247
+$0;1248
+$0;1249
+$0;1250
+$0;1251
+$40,000;1252
+$0;1253
+$0;1254
+$54,402;1255
+None;1256
+Y;1257
+01090004;1258
+010900040911;1259
+Sedimentation-Siltation,Phosphorus,Nitrogen;1260
+None;1261
+None;1262
+None;1263
+N;1264
+08/01/2006;1265
+Completed;1266
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1267
+None;1268
+None;1269
+99125702;1270
+RI;1271
+04-Water(NPS)-05;1272
+23756;1273
+Middletown: Slate Hill Farm Stormwater Retrofit;1274
+2004;1275
+$14,402;1276
+$0;1277
+$0;1278
+$0;1279
+$0;1280
+$0;1281
+$0;1282
+$40,000;1283
+$0;1284
+$0;1285
+$54,402;1286
+None;1287
+Y;1288
+01090004;1289
+010900040911;1290
+Sedimentation-Siltation,Phosphorus,Nitrogen;1291
+None;1292
+None;1293
+None;1294
+N;1295
+08/01/2006;1296
+Completed;1297
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1298
+None;1299
+None;1300
+99125702;1301
+n_lbsyr;Counter
+RI;1302
+04-Water(NPS)-05;1303
+23756;1304
+Middletown: Slate Hill Farm Stormwater Retrofit;1305
+2004;1306
+$14,402;1307
+$0;1308
+$0;1309
+$0;1310
+$0;1311
+$0;1312
+$0;1313
+$40,000;1314
+$0;1315
+$0;1316
+$54,402;1317
+None;1318
+Y;1319
+01090004;1320
+010900040911;1321
+Sedimentation-Siltation,Phosphorus,Nitrogen;1322
+None;1323
+None;1324
+None;1325
+N;1326
+08/01/2006;1327
+Completed;1328
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1329
+None;1330
+None;1331
+99125702;1332
+RI;1333
+04-Water(NPS)-05;1334
+23756;1335
+Middletown: Slate Hill Farm Stormwater Retrofit;1336
+2004;1337
+$14,402;1338
+$0;1339
+$0;1340
+$0;1341
+$0;1342
+$0;1343
+$0;1344
+$40,000;1345
+$0;1346
+$0;1347
+$54,402;1348
+None;1349
+Y;1350
+01090004;1351
+010900040911;1352
+Sedimentation-Siltation,Phosphorus,Nitrogen;1353
+None;1354
+None;1355
+None;1356
+N;1357
+08/01/2006;1358
+Completed;1359
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1360
+None;1361
+None;1362
+99125702;1363
+p_lbsyr;Counter
+RI;1364
+04-Water(NPS)-05;1365
+23756;1366
+Middletown: Slate Hill Farm Stormwater Retrofit;1367
+2004;1368
+$14,402;1369
+$0;1370
+$0;1371
+$0;1372
+$0;1373
+$0;1374
+$0;1375
+$40,000;1376
+$0;1377
+$0;1378
+$54,402;1379
+None;1380
+Y;1381
+01090004;1382
+010900040911;1383
+Sedimentation-Siltation,Phosphorus,Nitrogen;1384
+None;1385
+None;1386
+None;1387
+N;1388
+08/01/2006;1389
+Completed;1390
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1391
+None;1392
+None;1393
+99125702;1394
+RI;1395
+04-Water(NPS)-05;1396
+23756;1397
+Middletown: Slate Hill Farm Stormwater Retrofit;1398
+2004;1399
+$14,402;1400
+$0;1401
+$0;1402
+$0;1403
+$0;1404
+$0;1405
+$0;1406
+$40,000;1407
+$0;1408
+$0;1409
+$54,402;1410
+None;1411
+Y;1412
+01090004;1413
+010900040911;1414
+Sedimentation-Siltation,Phosphorus,Nitrogen;1415
+None;1416
+None;1417
+None;1418
+N;1419
+08/01/2006;1420
+Completed;1421
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1422
+None;1423
+None;1424
+99125702;1425
+sed_tonsyr;Counter
+RI;1426
+04-Water(NPS)-05;1427
+23756;1428
+Middletown: Slate Hill Farm Stormwater Retrofit;1429
+2004;1430
+$14,402;1431
+$0;1432
+$0;1433
+$0;1434
+$0;1435
+$0;1436
+$0;1437
+$40,000;1438
+$0;1439
+$0;1440
+$54,402;1441
+None;1442
+Y;1443
+01090004;1444
+010900040911;1445
+Sedimentation-Siltation,Phosphorus,Nitrogen;1446
+None;1447
+None;1448
+None;1449
+N;1450
+08/01/2006;1451
+Completed;1452
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1453
+None;1454
+None;1455
+99125702;1456
+RI;1457
+04-Water(NPS)-05;1458
+23756;1459
+Middletown: Slate Hill Farm Stormwater Retrofit;1460
+2004;1461
+$14,402;1462
+$0;1463
+$0;1464
+$0;1465
+$0;1466
+$0;1467
+$0;1468
+$40,000;1469
+$0;1470
+$0;1471
+$54,402;1472
+None;1473
+Y;1474
+01090004;1475
+010900040911;1476
+Sedimentation-Siltation,Phosphorus,Nitrogen;1477
+None;1478
+None;1479
+None;1480
+N;1481
+08/01/2006;1482
+Completed;1483
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1484
+None;1485
+None;1486
+99125702;1487
+statewide_ind;Counter
+RI;1488
+04-Water(NPS)-05;1489
+23756;1490
+Middletown: Slate Hill Farm Stormwater Retrofit;1491
+2004;1492
+$14,402;1493
+$0;1494
+$0;1495
+$0;1496
+$0;1497
+$0;1498
+$0;1499
+$40,000;1500
+$0;1501
+$0;1502
+$54,402;1503
+None;1504
+Y;1505
+01090004;1506
+010900040911;1507
+Sedimentation-Siltation,Phosphorus,Nitrogen;1508
+None;1509
+None;1510
+None;1511
+N;1512
+08/01/2006;1513
+Completed;1514
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1515
+None;1516
+None;1517
+99125702;1518
+RI;1519
+04-Water(NPS)-05;1520
+23756;1521
+Middletown: Slate Hill Farm Stormwater Retrofit;1522
+2004;1523
+$14,402;1524
+$0;1525
+$0;1526
+$0;1527
+$0;1528
+$0;1529
+$0;1530
+$40,000;1531
+$0;1532
+$0;1533
+$54,402;1534
+None;1535
+Y;1536
+01090004;1537
+010900040911;1538
+Sedimentation-Siltation,Phosphorus,Nitrogen;1539
+None;1540
+None;1541
+None;1542
+N;1543
+08/01/2006;1544
+Completed;1545
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1546
+None;1547
+None;1548
+99125702;1549
+project_start_date;Counter
+RI;1550
+04-Water(NPS)-05;1551
+23756;1552
+Middletown: Slate Hill Farm Stormwater Retrofit;1553
+2004;1554
+$14,402;1555
+$0;1556
+$0;1557
+$0;1558
+$0;1559
+$0;1560
+$0;1561
+$40,000;1562
+$0;1563
+$0;1564
+$54,402;1565
+None;1566
+Y;1567
+01090004;1568
+010900040911;1569
+Sedimentation-Siltation,Phosphorus,Nitrogen;1570
+None;1571
+None;1572
+None;1573
+N;1574
+08/01/2006;1575
+Completed;1576
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1577
+None;1578
+None;1579
+99125702;1580
+RI;1581
+04-Water(NPS)-05;1582
+23756;1583
+Middletown: Slate Hill Farm Stormwater Retrofit;1584
+2004;1585
+$14,402;1586
+$0;1587
+$0;1588
+$0;1589
+$0;1590
+$0;1591
+$0;1592
+$40,000;1593
+$0;1594
+$0;1595
+$54,402;1596
+None;1597
+Y;1598
+01090004;1599
+010900040911;1600
+Sedimentation-Siltation,Phosphorus,Nitrogen;1601
+None;1602
+None;1603
+None;1604
+N;1605
+08/01/2006;1606
+Completed;1607
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1608
+None;1609
+None;1610
+99125702;1611
+status;Counter
+RI;1612
+04-Water(NPS)-05;1613
+23756;1614
+Middletown: Slate Hill Farm Stormwater Retrofit;1615
+2004;1616
+$14,402;1617
+$0;1618
+$0;1619
+$0;1620
+$0;1621
+$0;1622
+$0;1623
+$40,000;1624
+$0;1625
+$0;1626
+$54,402;1627
+None;1628
+Y;1629
+01090004;1630
+010900040911;1631
+Sedimentation-Siltation,Phosphorus,Nitrogen;1632
+None;1633
+None;1634
+None;1635
+N;1636
+08/01/2006;1637
+Completed;1638
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1639
+None;1640
+None;1641
+99125702;1642
+RI;1643
+04-Water(NPS)-05;1644
+23756;1645
+Middletown: Slate Hill Farm Stormwater Retrofit;1646
+2004;1647
+$14,402;1648
+$0;1649
+$0;1650
+$0;1651
+$0;1652
+$0;1653
+$0;1654
+$40,000;1655
+$0;1656
+$0;1657
+$54,402;1658
+None;1659
+Y;1660
+01090004;1661
+010900040911;1662
+Sedimentation-Siltation,Phosphorus,Nitrogen;1663
+None;1664
+None;1665
+None;1666
+N;1667
+08/01/2006;1668
+Completed;1669
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1670
+None;1671
+None;1672
+99125702;1673
+project_link;Counter
+RI;1674
+04-Water(NPS)-05;1675
+23756;1676
+Middletown: Slate Hill Farm Stormwater Retrofit;1677
+2004;1678
+$14,402;1679
+$0;1680
+$0;1681
+$0;1682
+$0;1683
+$0;1684
+$0;1685
+$40,000;1686
+$0;1687
+$0;1688
+$54,402;1689
+None;1690
+Y;1691
+01090004;1692
+010900040911;1693
+Sedimentation-Siltation,Phosphorus,Nitrogen;1694
+None;1695
+None;1696
+None;1697
+N;1698
+08/01/2006;1699
+Completed;1700
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1701
+None;1702
+None;1703
+99125702;1704
+RI;1705
+04-Water(NPS)-05;1706
+23756;1707
+Middletown: Slate Hill Farm Stormwater Retrofit;1708
+2004;1709
+$14,402;1710
+$0;1711
+$0;1712
+$0;1713
+$0;1714
+$0;1715
+$0;1716
+$40,000;1717
+$0;1718
+$0;1719
+$54,402;1720
+None;1721
+Y;1722
+01090004;1723
+010900040911;1724
+Sedimentation-Siltation,Phosphorus,Nitrogen;1725
+None;1726
+None;1727
+None;1728
+N;1729
+08/01/2006;1730
+Completed;1731
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1732
+None;1733
+None;1734
+99125702;1735
+ws_protect_ind;Counter
+RI;1736
+04-Water(NPS)-05;1737
+23756;1738
+Middletown: Slate Hill Farm Stormwater Retrofit;1739
+2004;1740
+$14,402;1741
+$0;1742
+$0;1743
+$0;1744
+$0;1745
+$0;1746
+$0;1747
+$40,000;1748
+$0;1749
+$0;1750
+$54,402;1751
+None;1752
+Y;1753
+01090004;1754
+010900040911;1755
+Sedimentation-Siltation,Phosphorus,Nitrogen;1756
+None;1757
+None;1758
+None;1759
+N;1760
+08/01/2006;1761
+Completed;1762
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1763
+None;1764
+None;1765
+99125702;1766
+RI;1767
+04-Water(NPS)-05;1768
+23756;1769
+Middletown: Slate Hill Farm Stormwater Retrofit;1770
+2004;1771
+$14,402;1772
+$0;1773
+$0;1774
+$0;1775
+$0;1776
+$0;1777
+$0;1778
+$40,000;1779
+$0;1780
+$0;1781
+$54,402;1782
+None;1783
+Y;1784
+01090004;1785
+010900040911;1786
+Sedimentation-Siltation,Phosphorus,Nitrogen;1787
+None;1788
+None;1789
+None;1790
+N;1791
+08/01/2006;1792
+Completed;1793
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1794
+None;1795
+None;1796
+99125702;1797
+watershed_plans;Counter
+RI;1798
+04-Water(NPS)-05;1799
+23756;1800
+Middletown: Slate Hill Farm Stormwater Retrofit;1801
+2004;1802
+$14,402;1803
+$0;1804
+$0;1805
+$0;1806
+$0;1807
+$0;1808
+$0;1809
+$40,000;1810
+$0;1811
+$0;1812
+$54,402;1813
+None;1814
+Y;1815
+01090004;1816
+010900040911;1817
+Sedimentation-Siltation,Phosphorus,Nitrogen;1818
+None;1819
+None;1820
+None;1821
+N;1822
+08/01/2006;1823
+Completed;1824
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1825
+None;1826
+None;1827
+99125702;1828
+RI;1829
+04-Water(NPS)-05;1830
+23756;1831
+Middletown: Slate Hill Farm Stormwater Retrofit;1832
+2004;1833
+$14,402;1834
+$0;1835
+$0;1836
+$0;1837
+$0;1838
+$0;1839
+$0;1840
+$40,000;1841
+$0;1842
+$0;1843
+$54,402;1844
+None;1845
+Y;1846
+01090004;1847
+010900040911;1848
+Sedimentation-Siltation,Phosphorus,Nitrogen;1849
+None;1850
+None;1851
+None;1852
+N;1853
+08/01/2006;1854
+Completed;1855
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1856
+None;1857
+None;1858
+99125702;1859
+grant_no;Counter
+RI;1860
+04-Water(NPS)-05;1861
+23756;1862
+Middletown: Slate Hill Farm Stormwater Retrofit;1863
+2004;1864
+$14,402;1865
+$0;1866
+$0;1867
+$0;1868
+$0;1869
+$0;1870
+$0;1871
+$40,000;1872
+$0;1873
+$0;1874
+$54,402;1875
+None;1876
+Y;1877
+01090004;1878
+010900040911;1879
+Sedimentation-Siltation,Phosphorus,Nitrogen;1880
+None;1881
+None;1882
+None;1883
+N;1884
+08/01/2006;1885
+Completed;1886
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1887
+None;1888
+None;1889
+99125702;1890
+RI;1891
+04-Water(NPS)-05;1892
+23756;1893
+Middletown: Slate Hill Farm Stormwater Retrofit;1894
+2004;1895
+$14,402;1896
+$0;1897
+$0;1898
+$0;1899
+$0;1900
+$0;1901
+$0;1902
+$40,000;1903
+$0;1904
+$0;1905
+$54,402;1906
+None;1907
+Y;1908
+01090004;1909
+010900040911;1910
+Sedimentation-Siltation,Phosphorus,Nitrogen;1911
+None;1912
+None;1913
+None;1914
+N;1915
+08/01/2006;1916
+Completed;1917
+<a href="https://ordspub.epa.gov/ords/grts/f?p=grts:700:::NO:RP,700:P700_PRJ_SEQ:23756" target="_blank">VIEW</a>;1918
+None;1919
+None;1920
+99125702;1921
