@@ -99,7 +99,8 @@ def JSON_data2R(infile, outfile_base):
 
     count = 0 
 
-    j_outfile.write('{ "data":' + line_end + '[')
+    # j_outfile.write('{ "data":' + line_end + '[')
+    j_outfile.write('[')
 
     for entries in data_by_huc:
         for subentries in entries['items']:
@@ -142,12 +143,15 @@ def JSON_data2R(infile, outfile_base):
                 count = count+1
 
             
-    j_outfile.write(']' +line_end + '}')
-
+    # j_outfile.write(']' +line_end + '}')
+    # Add this as an end flag as alternative to deleting last ',' in json array
+    # j_outfile.write('{"state":"antarctica"}')
+    j_outfile.write(']')
+    
     h_outfile.close
     j_outfile.close
     csv_outfile.close
-    return j_outfile_name
+    return csv_outfile_name
 
 
       

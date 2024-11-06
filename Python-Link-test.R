@@ -17,6 +17,9 @@
 ## Load Libraries ##
 library(reticulate)
 library(jsonlite)
+library(stringr)
+# library(readr)
+
 use_condaenv("base")
 # use_python("/.........../python")
 # psys <- reticulate::import("sys")
@@ -29,12 +32,25 @@ source_python("main-fetch-using-URLlib3-ModifedRequests.py")
 infile <- './DataInput/RI-huc.csv'
 outfile <- 'HUC-Oly-test'
 
-filename2read_json <- JSON_data2R(infile, outfile)
+filename2read_csv <- JSON_data2R(infile, outfile)
 
-print (filename2read_json)
+print (filename2read_csv)
 
-GRTS_df <- read_json(filename2read_json)
-head (GRTS_df)
+GRTS_df <- read.csv(filename2read_csv, header = TRUE, sep = ";" )
+GRTS_df$H12 <- as.character (GRTS_df$huc_12)
+str (GRTS_df)
+
+print(GRTS_df$H12)
+print (str_length(GRTS_df$H12))
+GRTS_df$HUC_Twelve <- ""
+
+    ifelse( (str_length(GRTS_df$H12) == 11),
+    GRTS_df$HUC_Twelve <- paste ('0', GRTS_df$H12, sep=""),
+    GRTS_df$HUC_Twelve <- GRTS_df$H12
+    )
+
+
+print (GRTS_df$HUC_Twelve)
 
 q()
 
