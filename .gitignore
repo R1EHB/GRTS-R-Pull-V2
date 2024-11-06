@@ -1,2 +1,5 @@
 *.md~
 *~
+*.RData
+*.Rhistory
+__pycache__/*
