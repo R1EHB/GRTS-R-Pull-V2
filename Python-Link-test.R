@@ -11,16 +11,21 @@
 # Also note need to work around TLS 1.2 and renegotiation problem with main webserver at ordspub.epa.gov.
 
 
-
-
-
 ## Load Libraries ##
 library(reticulate)
 library(jsonlite)
 library(stringr)
 # library(readr)
 
-use_condaenv("base")
+# For work computer, win11
+# use_condaenv("base")
+
+
+# For home computer, linux
+use_virtualenv("Rthonic")
+
+# use_venv
+
 # use_python("/.........../python")
 # psys <- reticulate::import("sys")
 # pspect <- reticulate::import("inspect")
