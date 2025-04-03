@@ -60,6 +60,9 @@ def get_legacy_session():
 
 
 def JSON_data2R(infile, outfile_base):
+    line_end_dos='\r'
+    line_end_unix='\r\n'
+    line_end=line_end_dos
     with open (infile, newline='') as csvfile:
         #filereader = csv.DictReader(csvfile, fieldnames=None,delimiter = '\t')
         filereader = csv.DictReader(csvfile, delimiter = ',')
@@ -82,8 +85,9 @@ def JSON_data2R(infile, outfile_base):
     j_outfile  = open (j_outfile_name,'w', encoding ="utf-8")
 
     # Write opening json structure
-    j_outfile.write('{ "data": \r\n [')
     
+    # j_outfile.write('{ "data": \r\n [')
+    j_outfile.write('{ "data":' + line_end + '[')
     huc_data_dump_file = open (huc_data_dump_name, 'wb')
     csv_outfile   = open (csv_outfile_name,   'w', encoding ="utf-8")
    
@@ -136,7 +140,7 @@ def JSON_data2R(infile, outfile_base):
         for subentries in entries['items']:
             h_outfile.write(json.dumps(subentries))
             j_outfile.write(json.dumps(subentries))
-            h_outfile.write('\r\n')        
+            h_outfile.write(line_end)        
             j_outfile.write(',')
             e_dict = subentries.keys()
             dict_val = subentries.values()
@@ -160,21 +164,22 @@ def JSON_data2R(infile, outfile_base):
                         csv_outfile.write ('\r\n')
                         count = count +1
             
-                    else:
-                        for lj in dict_val:
-                            lk = str (lj)
+            else:
+                for lj in dict_val:
+                    lk = str (lj)
                                             
-                            csv_outfile.write(lk)
-                            csv_outfile.write(';')
+                    csv_outfile.write(lk)
+                    csv_outfile.write(';')
                             
-                            csv_outfile.write (str(count))    
-                            csv_outfile.write ('\r\n')
-
-                            count = count+1
+                    csv_outfile.write (str(count))    
+                    csv_outfile.write ('\r\n')
+                        
+                    count = count+1
 
             
-    j_outfile.write('] \r\n }')
-
+    # j_outfile.write('] \r\n }')
+    # j_outfile.write(']' +line_end + '}')
+    j_outfile.write(']')
     h_outfile.close()
     j_outfile.close()
     csv_outfile.close()
