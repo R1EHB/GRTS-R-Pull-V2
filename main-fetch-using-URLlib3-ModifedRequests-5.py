@@ -222,7 +222,7 @@ def main():
     
     
     # for row in GRTS_Data.input_huc12_data:
-    for row in GRTS_Data.input_huc12_data[1:6:1]:
+    for row in GRTS_Data.input_huc12_data[1:2:1]:
         print (row)
         data = GRTS_Data.retrieve_GRTS_data(row['huc12'])
         print (data)
