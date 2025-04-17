@@ -85,7 +85,7 @@ G_LINE_END_DOS='\r'
 G_LINE_END_UNIX='\r\n'
 G_OUTPUT_BASE_NAME = './DataOutput/HUC-NewEng-test'
 G_INPUT_HUC12_FILE = '../HUC-it/HUC-Data-Lists/New_England_HUCs.csv'
-
+G_SLEEP_TIME = 1
 
 G_API_BASE = 'https://ordspub.epa.gov/ords/grts_rest/grts_rest_apex/grts_rest_apex/GetProjectsByHUC12/'
 
@@ -144,17 +144,6 @@ class GRTSDataParent:
         # grts_status_by_huc.append(grts_response.status_code)
         return (self.grts_data_by_huc)
     
-class GRTSincData(GRTSDataParent):
-    ''' Interim data write
-    Write GRTS Records as we go along in case of crash
-    File ending is As We Go in JSON '''
-    
-    def __init__(self,output_file_type='awg.json'):
-        self.output_file_type=output_file_type
-        self.output_file_name = self.output_base_name + '.' + self.output_file_type
-        self.output_file = open (self.output_file_name,'w')
-    
-    
 
 
 class GRTSDataPickled(GRTSDataParent):
@@ -167,7 +156,7 @@ class GRTSDataPickled(GRTSDataParent):
 
     def dump_data_to_disk(self):
         ''' Whole dataset at once '''
-        pickle.dump(grts_data_by_huc, output_file)
+        pickle.dump(self.grts_data_by_huc, self.output_file)
 
     def __del__(self):
         self.output_file.close()
@@ -177,7 +166,7 @@ class GRTSDataJson(GRTSDataParent):
         self.output_file_type=output_file_type
         self.output_file_name = self.output_base_name + '.' + self.output_file_type
         self.output_file = open (self.output_file_name,'w', encoding="utf-8")
-        self.output_file.write('{ "data":' + line_end + '[')
+        self.output_file.write('{ "data":')
 
     def write_data_2_disk(self,data_to_write):
         ''' One line at a time '''
@@ -185,7 +174,7 @@ class GRTSDataJson(GRTSDataParent):
         self.output_file.write(',')
 
     def __del__(self):
-        self.output_file.write(']')
+        self.output_file.write('}')
         self.output_file.close()
         
 class GRTSDataJsonLD(GRTSDataParent):
@@ -200,12 +189,23 @@ class GRTSDataJsonLD(GRTSDataParent):
         self.output_file.write(line_end)
 
     def __del__(self):
-        self.output_file.write(']')
+        # self.output_file.write(']')
         self.output_file.close()    
 
 class GRTSDataCSV(GRTSDataParent):
     def __init__(self,output_file_type='csv'):
         self.output_file_type=output_file_type
+        self.output_file_name = self.output_base_name + '.' + self.output_file_type
+        self.output_file = open (self.output_file_name,'w', encoding="utf-8")
+
+        # Write CSV header row
+        
+        
+    def __del__(self):
+
+        # Something here?
+        self.output_file.close()
+        
 
 
 def oldmain():
@@ -229,21 +229,22 @@ def main():
     pickle_data = GRTSDataPickled()
     json_data = GRTSDataJson()
     jsonLD_data = GRTSDataJsonLD()
+    csv_data = GRTSDataCSV()
 
     # for row in GRTS_Data.input_huc12_data:
-    for row in GRTS_Data.input_huc12_data[1:60:1]:
+    for row in GRTS_Data.input_huc12_data[1:2:1]:
         print (row)
         data = GRTS_Data.retrieve_GRTS_data(row['huc12'])
         json_data.write_data_2_disk(data)
         jsonLD_data.write_data_2_disk(data)
-        time.sleep(1)
+        time.sleep(G_SLEEP_TIME) # Sleep to avoid rate limits
         pass
-    '''    
-    for row in GRTS_Data.input_huc12_data:
-        data = GRTS_Data.retrieve_GRTS_data (row)
-        json_data.write_data_2_disk(data)
-        jsonLD_data.write_data_2_disk(data)
-    '''        
+
+    pickle_data.dump_data_to_disk()
+
+    # for in_row in GRTS_DATA.grts_data_by_huc:
+        
+    
     sys.exit()
     return
     
