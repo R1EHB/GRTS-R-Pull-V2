@@ -83,9 +83,9 @@ def get_legacy_session():
 
 G_LINE_END_DOS='\r'
 G_LINE_END_UNIX='\r\n'
-G_OUTPUT_BASE_NAME = './DataOutput/HUC-NewEng-test'
+G_OUTPUT_BASE_NAME = 'HUC-NewEng-test'
 G_INPUT_HUC12_FILE = '../HUC-it/HUC-Data-Lists/New_England_HUCs.csv'
-G_SLEEP_TIME = 1
+
 
 G_API_BASE = 'https://ordspub.epa.gov/ords/grts_rest/grts_rest_apex/grts_rest_apex/GetProjectsByHUC12/'
 
@@ -133,8 +133,7 @@ class GRTSDataParent:
     def retrieve_GRTS_data (self, HUC_12_number, api_base=G_API_BASE):
         grts_response = get_legacy_session().get(api_base+HUC_12_number)
 
-        # Probably need better error handling (better ways to recover, pause, resume)
-        while grts_response.status_code != 200: 
+        while grts_response.status_code != 200: # Probably need better error handling (better ways to recover, pause, resume)
             # get a big record, see 010600030901
             # grab error codes to analyze?
             time.sleep (3)
@@ -143,9 +142,8 @@ class GRTSDataParent:
             
         self.grts_data_by_huc.append(json.loads(grts_response.content))
         # grts_status_by_huc.append(grts_response.status_code)
-        return self.grts_data_by_huc
-
-
+        return (self.grts_data_by_huc)
+    
 class GRTSDataPickled(GRTSDataParent):
     ''' Pickled data dump '''
     
@@ -156,7 +154,7 @@ class GRTSDataPickled(GRTSDataParent):
 
     def dump_data_to_disk(self):
         ''' Whole dataset at once '''
-        pickle.dump(self.grts_data_by_huc, self.output_file)
+        pickle.dump(grts_data_by_huc, output_file)
 
     def __del__(self):
         self.output_file.close()
@@ -166,7 +164,7 @@ class GRTSDataJson(GRTSDataParent):
         self.output_file_type=output_file_type
         self.output_file_name = self.output_base_name + '.' + self.output_file_type
         self.output_file = open (self.output_file_name,'w', encoding="utf-8")
-        self.output_file.write('{ "data":')
+        self.output_file.write('{ "data":' + line_end + '[')
 
     def write_data_2_disk(self,data_to_write):
         ''' One line at a time '''
@@ -174,7 +172,7 @@ class GRTSDataJson(GRTSDataParent):
         self.output_file.write(',')
 
     def __del__(self):
-        self.output_file.write('}')
+        self.output_file.write(']')
         self.output_file.close()
         
 class GRTSDataJsonLD(GRTSDataParent):
@@ -189,53 +187,48 @@ class GRTSDataJsonLD(GRTSDataParent):
         self.output_file.write(line_end)
 
     def __del__(self):
-        # self.output_file.write(']')
+        self.output_file.write(']')
         self.output_file.close()    
 
 class GRTSDataCSV(GRTSDataParent):
     def __init__(self,output_file_type='csv'):
         self.output_file_type=output_file_type
-        self.output_file_name = self.output_base_name + '.' + self.output_file_type
-        self.output_file = open (self.output_file_name,'w', encoding="utf-8")
-
-        # Write CSV header row
-        
-        
-    def __del__(self):
-
-        # Something here?
-        self.output_file.close()
-        
 
 
+def oldmain():
 
+    #     JSON_data2R('./DataInput/HUC12NewEnglandvector.csv','HUC-NewEng-test')
+
+    test =  HUC12List('./DataInput/HUC12NewEnglandvector.csv')
+
+    #print (dir(test))
+    #print (inspect.getmembers(test))
+    # huc_file_2_interate =test.openHUCfile()
+    # test.get_hucs()
+    test.print_hucs()
+    sys.exit()
+    return
 
 def main():
-    
     NewE_hucs =  HUC12List(G_INPUT_HUC12_FILE)
-    NewE_hucs.print_hucs
+    NewE_hucs.print_hucs()
     GRTS_Data = GRTSDataParent(NewE_hucs.huc12_list)
-    pickle_data = GRTSDataPickled
-    json_data = GRTSDataJson
-    jsonLD_data = GRTSDataJsonLD
-    csv_data = GRTSDataCSV
-    
-    
-    # for row in GRTS_Data.input_huc12_data:
-    for row in GRTS_Data.input_huc12_data[1:6:1]:
+    pickle_data = GRTSDataPickled()
+    json_data = GRTSDataJson()
+    jsonLD_data = GRTSDataJsonLD()
+
+    for row in GRTS_Data.input_huc12_data:
         print (row)
         data = GRTS_Data.retrieve_GRTS_data(row['huc12'])
-        print (data)
-        # json_data.write_data_2_disk(data)
-        # jsonLD_data.write_data_2_disk(data)
-        # time.sleep(1) # Sleep to avoid rate limits
-        
-
-    # pickle_data.dump_data_to_disk()
-
-    # for in_row in GRTS_DATA.grts_data_by_huc:
-        
-    
+        time.sleep(1)
+        # GRTS_Data.write_data_2_disk(data)
+        pass
+    '''    
+    for row in GRTS_Data.input_huc12_data:
+        data = GRTS_Data.retrieve_GRTS_data (row)
+        json_data.write_data_2_disk(data)
+        jsonLD_data.write_data_2_disk(data)
+    '''        
     sys.exit()
     return
     
@@ -245,4 +238,138 @@ if __name__ == "__main__":
 
 
 
+
+
+
+
+    
+
+# dead code below to delete later
+def JSON_data2R(infile, outfile_base):
+    line_end_dos='\r'
+    line_end_unix='\r\n'
+    line_end=line_end_dos
+    with open (infile, newline='') as csvfile:
+        #filereader = csv.DictReader(csvfile, fieldnames=None,delimiter = '\t')
+        filereader = csv.DictReader(csvfile, delimiter = ',')
+        print (filereader)
+        huc12_list = []
+
+        for row in filereader:
+            # print (row['huc12'])
+            huc12_list.append(row['huc12'])
+    output_dir='./DataOutput/'
+    base_name_dir=output_dir+outfile_base
+    h_outfile_name=base_name_dir + '.' + 'Json-Output.human.json'
+    i_outfile_name=base_name_dir + '.' + 'WriteAlong.json'
+    j_outfile_name=base_name_dir + '.' + 'Json-Output.machine.json'
+    huc_data_dump_name=base_name_dir + '.' + 'HucDataDump.pickle'
+    csv_outfile_name=base_name_dir + '.' + 'spreadsheet.csv'
+
+    h_outfile  = open (h_outfile_name,'w', encoding="utf-8")
+    i_outfile  = open (i_outfile_name, 'wb')
+    j_outfile  = open (j_outfile_name,'w', encoding ="utf-8")
+
+    # Write opening json structure
+
+    # j_outfile.write('{ "data": \r\n [')
+    j_outfile.write('{ "data":' + line_end + '[')
+    huc_data_dump_file = open (huc_data_dump_name, 'wb')
+    csv_outfile = open (csv_outfile_name, 'w', encoding ="utf-8")
+
+
+    # Build URLs from Base and HUC12's desired
+
+    api_base = 'https://ordspub.epa.gov/ords/grts_rest/grts_rest_apex/grts_rest_apex/GetProjectsByHUC12/'
+
+    huc12_urls=[]
+
+    for element in huc12_list:
+        huc12_urls.append(api_base+element)
+
+    # Fetch the data by HUC12 from GRTS
+    data_by_huc = []
+    status_by_huc = []
+    # for huc in huc12_urls:
+    for huc in huc12_urls[1:60:1]:
+
+        # huc_response = requests.get(huc)
+
+
+        huc_response = get_legacy_session().get(huc)
+
+        while huc_response.status_code != 200:
+            time.sleep (3)
+            # flush()
+            huc_response = get_legacy_session().get(huc)
+
+        data_by_huc.append(json.loads(huc_response.content))
+        status_by_huc.append(huc_response.status_code)
+        # print (huc_response.content)
+        i_outfile.write(huc_response.content)
+        time.sleep(0.33)
+
+
+    i_outfile.close()
+
+    pickle.dump(data_by_huc, huc_data_dump_file)
+    huc_data_dump_file.close()
+
+
+
+
+
+    # write json data in a couple of different formats, entry by entry
+    # Sort and write CSV
+    count = 0
+    for entries in data_by_huc:
+        for subentries in entries['items']:
+            h_outfile.write(json.dumps(subentries))
+            j_outfile.write(json.dumps(subentries))
+            h_outfile.write(line_end)
+            j_outfile.write(',')
+            e_dict = subentries.keys()
+            dict_val = subentries.values()
+
+            if count == 0: # write the data headers
+
+                for ii in e_dict:
+                    csv_outfile.write (ii)
+                    csv_outfile.write (';')
+
+                    csv_outfile.write ('Counter')
+                    csv_outfile.write ('\r\n')
+
+
+                    for jj in dict_val:
+                        jk = str (jj)
+
+                        csv_outfile.write(jk)
+                        csv_outfile.write(';')
+                        csv_outfile.write (str(count))
+                        csv_outfile.write ('\r\n')
+                        count = count +1
+
+            else:
+                for lj in dict_val:
+                    lk = str (lj)
+
+                    csv_outfile.write(lk)
+                    csv_outfile.write(';')
+
+                    csv_outfile.write (str(count))
+                    csv_outfile.write ('\r\n')
+
+                    count = count+1
+
+
+    # j_outfile.write('] \r\n }')
+    # j_outfile.write(']' +line_end + '}')
+    j_outfile.write(']')
+    h_outfile.close()
+    j_outfile.close()
+    csv_outfile.close()
+
+    sys.exit()
+    return
 
