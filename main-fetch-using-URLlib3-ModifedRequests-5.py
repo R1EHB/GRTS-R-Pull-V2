@@ -118,7 +118,7 @@ class GRTSDataParent:
     output_base_name = G_OUTPUT_BASE_NAME
     grts_data_by_huc = []
     grts_response_by_huc = []
-    # grts_status_by_huc =[]
+    grts_status_by_huc =[]
     input_huc12_data = []
     
     def __init__(self,  huc12_data_list, output_file_type='parent'):
@@ -142,7 +142,7 @@ class GRTSDataParent:
             grts_response = get_legacy_session().get(api_base+HUC_12_number)
             
         self.grts_data_by_huc.append(json.loads(grts_response.content))
-        # grts_status_by_huc.append(grts_response.status_code)
+        self.grts_status_by_huc.append(grts_response.status_code)
         return self.grts_data_by_huc
 
 
@@ -222,13 +222,13 @@ def main():
     
     
     # for row in GRTS_Data.input_huc12_data:
-    for row in GRTS_Data.input_huc12_data[1:2:1]:
-        print (row)
+    for row in GRTS_Data.input_huc12_data[1:16:1]:
+        # print (row)
         data = GRTS_Data.retrieve_GRTS_data(row['huc12'])
         print (data)
         # json_data.write_data_2_disk(data)
         # jsonLD_data.write_data_2_disk(data)
-        # time.sleep(1) # Sleep to avoid rate limits
+        time.sleep(1) # Sleep to avoid rate limits
         
 
     # pickle_data.dump_data_to_disk()
