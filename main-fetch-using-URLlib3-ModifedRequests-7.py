@@ -102,6 +102,8 @@ class HUC12List:
 
         self.huc_progres_file = open (self.huc_progres_name,'w',
                                       encoding="utf-8")
+
+        self.huc_progres_file.write("These HUCs Processed: \n")
         
         with open (self.infile_name, newline='') as self.csvfile:
             self.filereader = csv.DictReader(self.csvfile, delimiter = ',',
@@ -110,11 +112,15 @@ class HUC12List:
             for row in self.filereader:
                 self.huc12_list.append(row)
 
+        
     def print_hucs(self):
         print (self.huc12_list)
 
     def write_hucs_done(self,huc_data):
+
         self.huc_progres_file.write(huc_data)
+        self.huc_progres_file.write(line_end)
+        
 
     def __del__(self):
         # Close File
