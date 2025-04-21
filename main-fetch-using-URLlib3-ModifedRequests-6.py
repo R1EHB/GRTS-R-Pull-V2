@@ -5,7 +5,7 @@ disentagle it, and write to a file for further analysis via R.
 Switching to a mixed environment from pure R because I think
 python handles messy nested JSON better than R.
 
-Date of last mod: 2 April 2025
+Date of last mod: 21 April 2025
 
 ######
 
@@ -85,7 +85,8 @@ G_LINE_END_DOS='\r'
 G_LINE_END_UNIX='\r\n'
 G_OUTPUT_BASE_NAME = './DataOutput/HUC-NewEng-test'
 G_INPUT_HUC12_FILE = '../HUC-it/HUC-Data-Lists/New_England_HUCs.csv'
-G_SLEEP_TIME = 1
+G_NORMAL_SLEEP_TIME = 0.5
+G_ERROR_SLEEP_TIME = 3
 
 G_API_BASE = 'https://ordspub.epa.gov/ords/grts_rest/grts_rest_apex/grts_rest_apex/GetProjectsByHUC12/'
 
@@ -97,7 +98,7 @@ class HUC12List:
     def __init__(self, infile_name=G_INPUT_HUC12_FILE ):
         self.infile_name = infile_name
         self.huc12_list = []
-        print (self.infile_name)
+        # print (self.infile_name)
 
         with open (self.infile_name, newline='') as self.csvfile:
             self.filereader = csv.DictReader(self.csvfile, delimiter = ',',
@@ -132,27 +133,34 @@ class GRTSDataParent:
 
     def retrieve_GRTS_data (self, HUC_12_number, api_base=G_API_BASE):
         grts_response = get_legacy_session().get(api_base+HUC_12_number)
+        if grts_response.status_code !=200:
+            self.slow_retrieval(grts_response.status_code)
         # grts_response = requests.get(api_base+HUC_12_number)
         # Probably need better error handling (better ways to recover, pause, resume)
-        while grts_response.status_code != 200: 
-            # get a big record, see 010600030901
-            # grab error codes to analyze?
-            print ("Response Code: " + grts_response.status_code)
-            time.sleep (3)
-            # flush()
-            grts_response = get_legacy_session().get(api_base+HUC_12_number)
-            # grts_response = requests.get(api_base+HUC_12_number)
-        print ("encoding: " + grts_response.encoding)
-        print ("Status Code:")
-        print (grts_response.status_code)
-        print ("Text: " + grts_response.text)
-        print ("Json: " + json.loads(grts_response.json()))
-        self.grts_data_by_huc.append(json.loads(grts_response.content))
+       
+        # print ("encoding: " + grts_response.encoding)
+        # print ("Status Code:")
+        # print (grts_response.status_code)
+        # print ("Text: " + grts_response.text)
+        # print ("json:")
+        # print (grts_response.json())
+        self.grts_data_by_huc.append(grts_response.json())
         self.grts_status_by_huc.append(grts_response.status_code)
-        print ("****")
+        # print ("****")
         # print (json.loads(grts_response))
         return (json.loads(grts_response.content))
+    
+    def slow_retrieval (r_code):
 
+
+        # get a big record, see 010600030901
+        # grab error codes to analyze?
+        print ("Response Code: " + r_code)
+        time.sleep (G_ERROR_SLEEP_TIME)
+        # flush()
+        #grts_response = get_legacy_session().get(api_base+HUC_12_number)
+        # grts_response = requests.get(api_base+HUC_12_number)
+        return
 
 class GRTSDataPickled(GRTSDataParent):
     ''' Pickled data dump '''
@@ -175,7 +183,7 @@ class GRTSDataJson(GRTSDataParent):
         self.output_file_name = self.output_base_name + '.' + self.output_file_type
         self.output_file = open (self.output_file_name,'w', encoding="utf-8")
         self.output_file.write('{ "data":')
-        print (self.output_file_name)
+        # print (self.output_file_name)
         
     def write_data_2_disk(self,data_to_write):
         ''' One line at a time '''
@@ -202,12 +210,21 @@ class GRTSDataJsonLD(GRTSDataParent):
         self.output_file.close()    
 
 class GRTSDataCSV(GRTSDataParent):
-    def __init__(self,output_file_type='csv'):
+    def __init__(self,output_file_type='_csv.txt'):
         self.output_file_type=output_file_type
+        self.field_delim=';'
         self.output_file_name = self.output_base_name + '.' + self.output_file_type
         self.output_file = open (self.output_file_name,'w', encoding="utf-8")
-
+        self.headr_file = open ("data-Header-Row.txt", 'r',encoding="utf-8")
+        # Insert headr line into csv file
         # Write CSV header row
+        for headline in self.headr_file:
+            self.write_data_2_disk(headline) # should only be one line
+        
+    def write_data_2_disk(self, data_to_write):
+        self.output_file.write(data_to_write)
+        
+        
         
         
     def __del__(self):
@@ -231,7 +248,7 @@ def main():
     
     
     # for row in GRTS_Data.input_huc12_data:
-    for row in GRTS_Data.input_huc12_data[1:36:1]:
+    for row in GRTS_Data.input_huc12_data[0:300:1]:
         # print (row)
         data = GRTS_Data.retrieve_GRTS_data(row['huc12'])
         print ("Data:")
@@ -239,13 +256,20 @@ def main():
         print (" ")
         json_data.write_data_2_disk(data)
         jsonLD_data.write_data_2_disk(data)
-        time.sleep(1) # Sleep to avoid rate limits
+        time.sleep(G_NORMAL_SLEEP_TIME) # Sleep to avoid rate limits
         
 
-    # pickle_data.dump_data_to_disk()
+    pickle_data.dump_data_to_disk()
 
-    # for in_row in GRTS_DATA.grts_data_by_huc:
-        
+    for in_row in GRTS_Data.grts_data_by_huc:
+        for subentries in in_row['items']: # Row loop
+            e_dict=subentries.keys()
+            dict_val=subentries.values()
+            for cols in dict_val: # columns/variables
+                col_data = str (cols)
+                csv_data.write_data_2_disk(col_data)
+                csv_data.write_data_2_disk(csv_data.field_delim)
+            csv_data.write_data_2_disk(line_end)
     
     sys.exit()
     return
