@@ -55,7 +55,7 @@ class CustomHttpAdapter (requests.adapters.HTTPAdapter):
 
     def init_poolmanager(self, connections, maxsize, block=False):
         # retries = Retry(total=5, backoff_factor=0.1, status_forcelist=[500, 502, 503, 504])
-        # retries = Retry(connect=5, read=2, redirect=5)
+        retries = Retry(connect=5, read=2, redirect=5)
         self.poolmanager = urllib3.poolmanager.PoolManager(
             num_pools=connections, maxsize=maxsize,
             block=block, ssl_context=self.ssl_context,retries=5)
@@ -85,9 +85,9 @@ G_LINE_END_DOS='\r'
 G_LINE_END_UNIX='\r\n'
 G_OUTPUT_BASE_NAME = './DataOutput/HUC-NewEng-test'
 G_INPUT_HUC12_FILE = '../HUC-it/HUC-Data-Lists/New_England_HUCs.csv'
-G_NORMAL_SLEEP_TIME = 0.5
+G_NORMAL_SLEEP_TIME = 0.75
 G_ERROR_SLEEP_TIME = 3
-
+G_HUC_PROGRESS_FILE = './DataOutput/HUC-ProgressReport.txt'
 G_API_BASE = 'https://ordspub.epa.gov/ords/grts_rest/grts_rest_apex/grts_rest_apex/GetProjectsByHUC12/'
 
 # Change this as needed
@@ -98,22 +98,28 @@ class HUC12List:
     def __init__(self, infile_name=G_INPUT_HUC12_FILE ):
         self.infile_name = infile_name
         self.huc12_list = []
-        # print (self.infile_name)
+        self.huc_progres_name = G_HUC_PROGRESS_FILE
 
+        self.huc_progres_file = open (self.huc_progres_name,'w',
+                                      encoding="utf-8")
+        
         with open (self.infile_name, newline='') as self.csvfile:
             self.filereader = csv.DictReader(self.csvfile, delimiter = ',',
                 quotechar='"')
                 
             for row in self.filereader:
-                #print (row)
                 self.huc12_list.append(row)
 
     def print_hucs(self):
         print (self.huc12_list)
 
+    def write_hucs_done(self,huc_data):
+        self.huc_progres_file.write(huc_data)
+
     def __del__(self):
         # Close File
         self.csvfile.close()
+        self.huc_progres_file.close()
             
 class GRTSDataParent:
     output_base_name = G_OUTPUT_BASE_NAME
@@ -135,19 +141,10 @@ class GRTSDataParent:
         grts_response = get_legacy_session().get(api_base+HUC_12_number)
         if grts_response.status_code !=200:
             self.slow_retrieval(grts_response.status_code)
-        # grts_response = requests.get(api_base+HUC_12_number)
-        # Probably need better error handling (better ways to recover, pause, resume)
-       
-        # print ("encoding: " + grts_response.encoding)
-        # print ("Status Code:")
-        # print (grts_response.status_code)
-        # print ("Text: " + grts_response.text)
-        # print ("json:")
-        # print (grts_response.json())
+        
         self.grts_data_by_huc.append(grts_response.json())
         self.grts_status_by_huc.append(grts_response.status_code)
-        # print ("****")
-        # print (json.loads(grts_response))
+        
         return (json.loads(grts_response.content))
     
     def slow_retrieval (r_code):
@@ -157,9 +154,7 @@ class GRTSDataParent:
         # grab error codes to analyze?
         print ("Response Code: " + r_code)
         time.sleep (G_ERROR_SLEEP_TIME)
-        # flush()
-        #grts_response = get_legacy_session().get(api_base+HUC_12_number)
-        # grts_response = requests.get(api_base+HUC_12_number)
+       
         return
 
 class GRTSDataPickled(GRTSDataParent):
@@ -256,6 +251,7 @@ def main():
         print (" ")
         json_data.write_data_2_disk(data)
         jsonLD_data.write_data_2_disk(data)
+        NewE_hucs.write_hucs_done(row['huc12'])
         time.sleep(G_NORMAL_SLEEP_TIME) # Sleep to avoid rate limits
         
 
