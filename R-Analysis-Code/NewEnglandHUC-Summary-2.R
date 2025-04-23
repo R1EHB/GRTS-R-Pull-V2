@@ -21,17 +21,23 @@ library(dplyr)
 library(vioplot)
 library(lubridate)
 library(readr)
+library(openxlsx)
+library(feather)
 
 infile <- '../DataOutput/HUC-NewEng-test.pandas.xlsx'
-outfile <- './DataOutput/R-Data.Rmd'
 
+R_outfile <- '../DataOutput/HUC-NewEng-cleaned.Rdata'
+F_outfile <- '../DataOutput/HUC-NewEng-cleaned.feather'
+Ex_outfile <-'../DataOutput/HUC-NewEng-cleaned.xlsx'
 
 GRTS_df <- read_excel(path=infile)
 
 
+## Fix Name for first column
+
+colnames(GRTS_df)[1] <- 'data_seq'
+
 ## Key type Conversions
-
-
 
 GRTS_df$project_start_date <- mdy(GRTS_df$project_start_date)
 
@@ -52,14 +58,6 @@ GRTS_df$other_funds <- parse_number(GRTS_df$other_funds)
 GRTS_df$local_in_kind <- parse_number(GRTS_df$local_in_kind)
 GRTS_df$total_budget <- parse_number(GRTS_df$total_budget)
 
-head (GRTS_df)
-
-
-
-#### 
-str (GRTS_df)
-
-
 skim(GRTS_df)
 
 x_origin <- year (ymd(19960101))
@@ -68,8 +66,16 @@ x_end <- year (ymd(20260101))
 year_date <- year(GRTS_df$project_start_date)
 
 plot(year_date,GRTS_df$n_lbsyr,log="y",xlim=c(x_origin, x_end),
-     ylim=c(0.1,110000), main="lbs N per Year Reduced log10",xlab="Year", ylab= "lbs N")
-# identify points
+     ylim=c(0.1,110000), main="lbs N per Year Reduced log10",
+     xlab="Year", ylab= "lbs N")
+
+## Save Altered Datasets
+
+save(GRTS_df, file=R_outfile)
+
+write_feather(GRTS_df, F_outfile)
+              
+write.xlsx(GRTS_df,Ex_outfile)
 
 q()
 
