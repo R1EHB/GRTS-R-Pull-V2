@@ -1,0 +1,90 @@
+---
+title: "Rmarkdown Test on HUC data cleanup"
+author: "Erik Beck, beck.erik@epa.gov"
+date: "24 April 2025"
+output: html_document
+---
+[comment]: # (Testing this comment)
+
+
+# GRTS Info Processing After Retrieval #
+
+Blah blah, say where in the processing chain this code set falls.
+
+
+## Library Setup ##
+
+```{r Library-Setup, message = FALSE, warning = FALSE }
+library(skimr)
+
+library(readxl)
+library(dplyr)
+# library(vioplot)
+library(lubridate)
+library(readr)
+library(openxlsx)
+library(feather)
+```
+
+## Path Setup ##
+
+
+```{r file-path-setup}
+infile <- '../DataOutput/HUC-NewEng-test.pandas.xlsx'
+R_outfile <- '../DataOutput/HUC-NewEng-cleaned.Rdata'
+F_outfile <- '../DataOutput/HUC-NewEng-cleaned.feather'
+Ex_outfile <-'../DataOutput/HUC-NewEng-cleaned.xlsx'
+# comment missing
+GRTS_df <- read_excel(path=infile)
+```
+
+## Data Type And Column Name Fixes ##
+
+```{r Data-Type-And-Column-Name-Fixes}
+# Name the first (left-most) column, which is a generated sequence number
+
+colnames(GRTS_df)[1] <- 'data_seq'
+
+GRTS_df$project_start_date <- mdy(GRTS_df$project_start_date)
+
+GRTS_df$n_lbsyr <- as.numeric(GRTS_df$n_lbsyr)
+GRTS_df$p_lbsyr <- as.numeric(GRTS_df$p_lbsyr)
+GRTS_df$sed_tonsyr <- as.numeric(GRTS_df$sed_tonsyr)
+GRTS_df$FakeHUC <- as.numeric(GRTS_df$huc_12)
+GRTS_df$total_319_funds <- parse_number(GRTS_df$total_319_funds)
+GRTS_df$project_dollars <- parse_number(GRTS_df$project_dollars)
+GRTS_df$program_dollars <- parse_number(GRTS_df$program_dollars)
+GRTS_df$epa_other <- parse_number(GRTS_df$epa_other)
+GRTS_df$other_federal <- parse_number(GRTS_df$other_federal)
+GRTS_df$state_funds <- parse_number(GRTS_df$state_funds)
+GRTS_df$state_in_kind <- parse_number(GRTS_df$state_in_kind)
+GRTS_df$local_funds <- parse_number(GRTS_df$local_funds)
+GRTS_df$other_funds <- parse_number(GRTS_df$other_funds)
+GRTS_df$local_in_kind <- parse_number(GRTS_df$local_in_kind)
+GRTS_df$total_budget <- parse_number(GRTS_df$total_budget)
+```
+
+
+## Summary Stats ##
+```{r Quick-Summary-Stats}
+skim(GRTS_df)
+```
+## Write Data ##
+```{r Write-Data}
+save(GRTS_df, file=R_outfile)
+write_feather(GRTS_df, F_outfile)
+write.xlsx(GRTS_df,Ex_outfile)
+```
+## Split Data by State ##
+
+```{r Hexfurcate}
+GRTS_df %>% group_by(state) -> GRTS_byState
+```
+
+## End ##
+
+```{r Fini}
+
+```
+
+
