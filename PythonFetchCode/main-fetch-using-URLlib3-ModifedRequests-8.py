@@ -76,7 +76,7 @@ def get_legacy_session():
 
 G_LINE_END_DOS='\r'
 G_LINE_END_UNIX='\r\n'
-G_OUTPUT_BASE_NAME = '../DataOutput/HUC-NewEng-test'
+G_OUTPUT_BASE_NAME = '../DataOutput/GRTS-Data-NewEng-byHUC'
 G_INPUT_HUC12_FILE = '../../HUC-it/HUC-Data-Lists/New_England_HUCs.csv'
 G_NORMAL_SLEEP_TIME = 0.75
 G_ERROR_SLEEP_TIME = 3
