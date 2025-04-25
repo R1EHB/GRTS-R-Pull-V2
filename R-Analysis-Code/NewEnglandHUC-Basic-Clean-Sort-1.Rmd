@@ -30,7 +30,7 @@ library(feather)
 
 
 ```{r file-path-setup}
-infile <- '../DataOutput/HUC-NewEng-test.pandas.xlsx'
+infile <- '../DataOutput/GRTS-Data-NewEng-byHUC.pandas.xlsx'
 R_outfile <- '../DataOutput/HUC-NewEng-cleaned.Rdata'
 F_outfile <- '../DataOutput/HUC-NewEng-cleaned.feather'
 Ex_outfile <- '../DataOutput/HUC-NewEng-cleaned.xlsx'

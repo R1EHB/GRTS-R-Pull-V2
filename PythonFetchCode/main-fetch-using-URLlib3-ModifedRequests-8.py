@@ -1,5 +1,10 @@
 # This Python file uses the following encoding: utf-8
 
+
+#####
+#    Something going wrong with 04* HUCs, mainly vermont
+#
+######
 '''
 Python Code to fetch json data from GRTS Server by HUC12,
 disentagle it, and write to a file for further analysis via R.
@@ -77,7 +82,7 @@ def get_legacy_session():
 G_LINE_END_DOS='\r'
 G_LINE_END_UNIX='\r\n'
 G_OUTPUT_BASE_NAME = '../DataOutput/GRTS-Data-NewEng-byHUC'
-G_INPUT_HUC12_FILE = '../../HUC-it/HUC-Data-Lists/New_England_HUCs.csv'
+G_INPUT_HUC12_FILE = '../../HUC-it/HUC-Data-Lists/New_England_HUC12s.csv'
 G_NORMAL_SLEEP_TIME = 0.75
 G_ERROR_SLEEP_TIME = 3
 G_HUC_PROGRESS_FILE = '../DataOutput/HUC-ProgressReport.txt'
