@@ -33,11 +33,21 @@ https://ordspub.epa.gov/ords/grts/f?p=109:1101:5279113984534:::1101:APP_PRJ_ID:1
 
 
 ## HUCs ##
-* 041504020301
-* 041504081101
+* 041504020301 (Furnace Brook, VT)
+    	+ 043001020301
+* 041504081101 (Rock River, VT)
+        + 043001081102
 
 ###  041504020301   ###
 https://ordspub.epa.gov/ords/grts_rest/grts_rest_apex/grts_rest_apex/GetProjectsByHUC12/041504020301
+
+
+### Affects Lake Champlain Drainage, at least VT side ###
+HUC12	043001081604
+Name	Lake Champlain
+
+
+ToHUC	043001090302
 
 
 #### Results Via Google Chrome ####

@@ -5,3 +5,5 @@
 __pycache__/*
 DataOutput/*
 *.R~
+MissingHUC-Test-VT_etc/NHD-USGS/*
+MissingHUC-Test-VT_etc/NHDplus/*
