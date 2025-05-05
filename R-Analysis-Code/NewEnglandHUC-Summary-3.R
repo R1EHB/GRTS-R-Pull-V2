@@ -4,9 +4,9 @@
 ## Using panda generated version of excel
 
 
-## total_319_funds	project_dollars	program_dollars	epa_other	other_federal	state_funds	state_in_kind	local_funds	other_funds	local_in_kind	total_budget
-
-
+## total_319_funds	project_dollars	program_dollars	epa_other
+## other_federal	state_funds	state_in_kind	local_funds
+## other_funds	local_in_kind	total_budget
 
 
 library(skimr)
@@ -18,6 +18,7 @@ library(lubridate)
 library(readr)
 library(openxlsx)
 library(feather)
+library(ggplot2)
 
 
 infile <- '../DataOutput/GRTS-Data-NewEng-byHUC.pandas.xlsx'
@@ -28,6 +29,10 @@ Ex_outfile <-'../DataOutput/HUC-NewEng-cleaned.xlsx'
 
 GRTS_df <- read_excel(path=infile)
 
+
+## Drop out NY State which was kept for debugging purposes in an earlier step
+
+GRTS_df <- subset(GRTS_df, state!="NY")
 
 ## Fix Name for first column
 
@@ -55,28 +60,65 @@ GRTS_df$local_in_kind <- parse_number(GRTS_df$local_in_kind)
 GRTS_df$total_budget <- parse_number(GRTS_df$total_budget)
 
 skim(GRTS_df)
+print (min (GRTS_df$n_lbsyr, na.rm=TRUE))
+print (min (GRTS_df$p_lbsyr, na.rm=TRUE))
+print (min (GRTS_df$sed_tonsyr, na.rm=TRUE))
 
 x_origin <- year (ymd(19960101))
 x_end <- year (ymd(20260101))
 
 year_date <- year(GRTS_df$project_start_date)
 
+GRTS_df$year_date <- year_date
+
 plot(year_date,GRTS_df$n_lbsyr,log="y",xlim=c(x_origin, x_end),
      ylim=c(0.1,110000), main="lbs N per Year Reduced log10",
      xlab="Year", ylab= "lbs N")
 
+# head(GRTS_df[,27:34])
+
+
+ggplot (data=subset(GRTS_df,n_lbsyr>0.000001), aes(y=log10(n_lbsyr), x=approp_year)) +
+    geom_point(aes(color=state)) +xlim (1996,2025) +
+    ylim(-2,6) +
+    labs(title = "lbs N per Year Reduced Log10", subtitle= "By state")
+
+hist (log10(GRTS_df$n_lbsyr), main="N Reductions lbs / Year Per Project Histogram",
+      xlab="Log N Reductions (10^x)", xlim=c(-6,6))
+
+# boxplot (GRTS_df$n_lbsyr, main ="N boxplot")
+
 
 plot(year_date,GRTS_df$p_lbsyr,log="y",xlim=c(x_origin, x_end),
      ylim=c(0.1,110000), main="lbs P per Year Reduced log10",
      xlab="Year", ylab= "lbs P")
 
-plot(year_date,GRTS_df$p_lbsyr,log="y",xlim=c(x_origin, x_end),
-     ylim=c(0.1,110000), main="lbs P per Year Reduced log10",
-     xlab="Year", ylab= "lbs P")
+ggplot (data=subset(GRTS_df,p_lbsyr>0.000001), aes(y=log10(p_lbsyr), x=approp_year)) +
+    geom_point(aes(color=state)) +xlim (1996,2025) +
+    ylim(-2,5) +
+    labs(title = "lbs P per Year Reduced Log10", subtitle= "By state")
+
+
+hist (log10(GRTS_df$p_lbsyr), main="P Reductions lbs / Year Per Project Histogram",
+      xlab="Log P Reductions (10^x)", xlim=c(-4.5,4.5))
+
+# boxplot (GRTS_df$p_lbsyr, main ="P boxplot")
 
 plot(year_date,GRTS_df$sed_tonsyr,log="y",xlim=c(x_origin, x_end),
      ylim=c(0.1,110000), main="Tons Sediment per Year Reduced log10",
      xlab="Year", ylab= "Tons Sediment")
+
+ggplot (data=subset(GRTS_df,sed_tonsyr>0.000001), aes(y=log10(sed_tonsyr), x=approp_year)) +
+    geom_point(aes(color=state)) +xlim (1996,2025) +
+    ylim(-2,4) +
+    labs(title = "Tons Sediment per Year Reduced Log10", subtitle= "By state")
+
+
+hist (log10(GRTS_df$sed_tonsyr), main="Sediment Reductions tons / Year Per Project Histogram",
+      xlab="Log Sediment Reductions (10^x)", xlim=c(-7,7))
+
+
+# boxplot (GRTS_df$sed_tonsyr, main ="Sediment  boxplot")
 
 ## Save Altered Datasets
 

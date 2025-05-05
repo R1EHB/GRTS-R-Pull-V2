@@ -81,11 +81,11 @@ def get_legacy_session():
 
 G_LINE_END_DOS='\r'
 G_LINE_END_UNIX='\r\n'
-G_OUTPUT_BASE_NAME = '../DataOutput/GRTS-Data-NewEng-byHUC'
+G_OUTPUT_BASE_NAME = '../DataOutput/TESTGRTS-Data-NewEng-byHUC'
 # Testing vT ONLY
-# G_INPUT_HUC12_FILE = '../../HUC-it/HUC-Data-Lists/VT_HUCs.csv'
+G_INPUT_HUC12_FILE = '../../HUC-it/HUC-Data-Lists/VT_HUCs.csv'
 
-G_INPUT_HUC12_FILE = '../../HUC-it/HUC-Data-Lists/New_England_HUC12s.csv'
+#G_INPUT_HUC12_FILE = '../../HUC-it/HUC-Data-Lists/New_England_HUC12s.csv'
 G_NORMAL_SLEEP_TIME = 0.75
 G_ERROR_SLEEP_TIME = 3
 G_HUC_PROGRESS_FILE = '../DataOutput/HUC-ProgressReport.txt'
@@ -152,11 +152,25 @@ class GRTSDataParent:
             print ("*********  ERROR URL Response ********")
             print (grts_response.status_code)
             print ("*********  Eeeeek ********")
-            
+       
         self.grts_data_by_huc.append(grts_response.json())
         self.grts_status_by_huc.append(grts_response.status_code)
         
         return (json.loads(grts_response.content))
+
+    def parse_date_char (self):
+        '''
+        Fix M/D/Y into as date in dataset
+        '''
+        for row in self.grts_data_by_huc:
+            char_date=row  #.get("project_start_date")
+            print ("Sauce****")
+            print (type(char_date))
+            ## need some missing and blank and wrong data handling
+            print (char_date)
+            print()
+        
+        return 
     
     def slow_retrieval (r_code):
 
@@ -274,8 +288,7 @@ def main():
     csv_data = GRTSDataCSV()
     p_frame=GRTSPandasFrame()
     
-    for row in GRTS_Data.input_huc12_data:
-        # print (row)
+    for row in GRTS_Data.input_huc12_data[1:40:1]: # Testing
         data = GRTS_Data.retrieve_GRTS_data(row['huc12'])
         print ("Data:")
         print (data)
@@ -285,7 +298,7 @@ def main():
         NewE_hucs.write_hucs_done(row['huc12'])
         time.sleep(G_NORMAL_SLEEP_TIME) # Sleep to avoid rate limits
         
-
+    GRTS_Data.parse_date_char() # move this into loop below, remove loop above
     pickle_data.dump_data_to_disk()
 
     for in_row in GRTS_Data.grts_data_by_huc:
