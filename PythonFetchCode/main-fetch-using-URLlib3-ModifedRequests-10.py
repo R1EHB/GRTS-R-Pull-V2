@@ -2,7 +2,7 @@
 
 
 #####
-#    Something going wrong with 04* HUCs, mainly vermont
+#
 #
 ######
 '''
@@ -16,7 +16,7 @@ Date of last mod: 25 April 2025
 
 Adding some pandas data structures to facilitate conversion to R dataset
 
-
+Give discussion about HUC area 04...
 
 '''
 
@@ -25,6 +25,8 @@ import csv
 import sys
 import ssl
 import time
+from datetime import datetime
+from datetime import date
 import pickle
 import inspect
 
@@ -158,19 +160,54 @@ class GRTSDataParent:
         
         return (json.loads(grts_response.content))
 
-    def parse_date_char (self):
+    def parse_date_char (self, data_row):
         '''
         Fix M/D/Y into as date in dataset
         '''
-        for row in self.grts_data_by_huc:
-            char_date=row  #.get("project_start_date")
-            print ("Sauce****")
-            print (type(char_date))
-            ## need some missing and blank and wrong data handling
-            print (char_date)
-            print()
+            
+        revised_data_row=data_row
+        revised_data_row['project_start_date_text'] = data_row.get('project_start_date')
+        i_temp = str (data_row.get('project_start_date'))
+        print (i_temp)
         
-        return 
+        when = datetime.strptime(i_temp, '%m/%d/%Y')
+        sane_when = self.reasonable_date_check(when)
+        revised_data_row['project_start_date'] = sane_when
+        print ("Sauce****")
+        print (type(revised_data_row))
+        
+        print (revised_data_row)
+        print()
+        
+        return (revised_data_row)
+
+    def reasonable_date_check (self, date_check):
+        ''' This function checks and fixes out of bounds dates
+            as needed
+        '''
+        
+        #looking for date as a datetime.datetime object
+        g_min_date = '1987-12-31'
+        grts_min_date = datetime.strptime(g_min_date,'%Y-%m-%d')
+        
+        grts_max_date = datetime.today()
+
+        print (grts_max_date)
+
+        if date_check==None:
+            date_check = grts_min_date
+        if date_check < grts_min_date:
+            date_check = grts_min_date
+        if date_check > grts_max_date:
+            date_check = grts_max_date
+        if date_check >= grts_min_date and date_check <= grts_max_date:
+            pass
+        
+
+        return (date_check)
+
+    
+    
     
     def slow_retrieval (r_code):
 
@@ -298,11 +335,12 @@ def main():
         NewE_hucs.write_hucs_done(row['huc12'])
         time.sleep(G_NORMAL_SLEEP_TIME) # Sleep to avoid rate limits
         
-    GRTS_Data.parse_date_char() # move this into loop below, remove loop above
+    
     pickle_data.dump_data_to_disk()
 
     for in_row in GRTS_Data.grts_data_by_huc:
         for subentries in in_row['items']: # Row loop
+            GRTS_Data.parse_date_char(subentries) 
             e_dict=subentries.keys()
             dict_val=subentries.values()
             for cols in dict_val: # columns/variables
