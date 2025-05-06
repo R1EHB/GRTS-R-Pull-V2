@@ -30,7 +30,9 @@ library(feather)
 
 
 ```{r file-path-setup}
-infile <- '../DataOutput/GRTS-Data-NewEng-byHUC.pandas.xlsx'
+#infile <- '../DataOutput/GRTS-Data-NewEng-byHUC.pandas.xlsx'
+infile <- '../DataOutput/TESTGRTS-Data-NewEng-byHUC.pandas.xlsx' #test
+
 R_outfile <- '../DataOutput/HUC-NewEng-cleaned.Rdata'
 F_outfile <- '../DataOutput/HUC-NewEng-cleaned.feather'
 Ex_outfile <- '../DataOutput/HUC-NewEng-cleaned.xlsx'
@@ -64,7 +66,9 @@ colnames(GRTS_df)[1] <- 'data_seq'
 # need to change these two date formats below to match upstream fixes
 ## probably ymd_hms()
 
-GRTS_df$project_start_date <- ymd_hms(GRTS_df$project_start_date)
+print (GRTS_df$project_start_date)
+
+GRTS_df$project_start_date <- ymd(GRTS_df$project_start_date)
 GRTS_df$project_start_date <- mdy(GRTS_df$project_start_date_text)
 
 GRTS_df$n_lbsyr <- as.numeric(GRTS_df$n_lbsyr)
